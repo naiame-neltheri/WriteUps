@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Feb 26 14:43:00 2020 as: nmap -v -Pn -p- -f -sS -sV -&#45;script=vuln -oX /home/naiame/Documents/WriteUps/HackTheBox/Retired/Legacy/nmap.xml 10.10.10.4 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -f -sS -sV -&#45;script=vuln -oX /home/naiame/Documents/WriteUps/HackTheBox/Retired/Legacy/nmap.xml 10.10.10.4" start="1582699380" startstr="Wed Feb 26 14:43:00 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1582699380"/>
+<taskprogress task="NSE" time="1582699391" percent="50.00" remaining="12" etc="1582699402"/>
+<taskend task="NSE" time="1582699414"/>
+<taskbegin task="NSE" time="1582699414"/>
+<taskend task="NSE" time="1582699414"/>
+<prescript><script id="broadcast-avahi-dos" output="&#xa;  Discovered hosts:&#xa;    224.0.0.251&#xa;  After NULL UDP avahi packet DoS (CVE-2011-1002).&#xa;  Hosts are all up (not vulnerable).&#xa;"/></prescript><taskbegin task="Parallel DNS resolution of 1 host." time="1582699414"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1582699414"/>
+<taskbegin task="SYN Stealth Scan" time="1582699414"/>
+<taskprogress task="SYN Stealth Scan" time="1582699445" percent="4.07" remaining="732" etc="1582700176"/>
+<taskprogress task="SYN Stealth Scan" time="1582699475" percent="8.74" remaining="638" etc="1582700112"/>
+<taskprogress task="SYN Stealth Scan" time="1582699505" percent="13.51" remaining="583" etc="1582700087"/>
+<taskprogress task="SYN Stealth Scan" time="1582699547" percent="19.86" remaining="537" etc="1582700084"/>
+<taskprogress task="SYN Stealth Scan" time="1582699577" percent="24.53" remaining="502" etc="1582700079"/>
+<taskprogress task="SYN Stealth Scan" time="1582699607" percent="30.18" remaining="447" etc="1582700053"/>
+<taskprogress task="SYN Stealth Scan" time="1582699637" percent="35.21" remaining="411" etc="1582700047"/>
+<taskprogress task="SYN Stealth Scan" time="1582699679" percent="41.27" remaining="378" etc="1582700056"/>
+<taskprogress task="SYN Stealth Scan" time="1582699709" percent="46.49" remaining="340" etc="1582700049"/>
+<taskprogress task="SYN Stealth Scan" time="1582699739" percent="51.54" remaining="306" etc="1582700045"/>
+<taskprogress task="SYN Stealth Scan" time="1582699769" percent="59.72" remaining="240" etc="1582700008"/>
+<taskprogress task="SYN Stealth Scan" time="1582699799" percent="67.95" remaining="182" etc="1582699981"/>
+<taskprogress task="SYN Stealth Scan" time="1582699829" percent="73.49" remaining="150" etc="1582699979"/>
+<taskprogress task="SYN Stealth Scan" time="1582699859" percent="81.28" remaining="103" etc="1582699962"/>
+<taskprogress task="SYN Stealth Scan" time="1582699871" percent="82.14" remaining="100" etc="1582699970"/>
+<taskprogress task="SYN Stealth Scan" time="1582699901" percent="88.59" remaining="63" etc="1582699964"/>
+<taskend task="SYN Stealth Scan" time="1582699947" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1582699947"/>
+<taskend task="Service scan" time="1582699954" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1582699954"/>
+<taskend task="NSE" time="1582699963"/>
+<taskbegin task="NSE" time="1582699963"/>
+<taskend task="NSE" time="1582699963"/>
+<host starttime="1582699414" endtime="1582699963"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.4" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" product="Microsoft Windows XP microsoft-ds" ostype="Windows XP" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows_xp</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="127"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="samba-vuln-cve-2012-1182" output="NT_STATUS_ACCESS_DENIED">false</script><script id="smb-vuln-ms08-067" output="&#xa;  VULNERABLE:&#xa;  Microsoft Windows system vulnerable to remote code execution (MS08-067)&#xa;    State: VULNERABLE&#xa;    IDs:  CVE:CVE-2008-4250&#xa;          The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,&#xa;          Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary&#xa;          code via a crafted RPC request that triggers the overflow during path canonicalization.&#xa;          &#xa;    Disclosure date: 2008-10-23&#xa;    References:&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250&#xa;      https://technet.microsoft.com/en-us/library/security/ms08-067.aspx&#xa;"><table key="CVE-2008-4250">
+<elem key="title">Microsoft Windows system vulnerable to remote code execution (MS08-067)</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="ids">
+<elem>CVE:CVE-2008-4250</elem>
+</table>
+<table key="description">
+<elem>    The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,&#xa;    Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary&#xa;    code via a crafted RPC request that triggers the overflow during path canonicalization.&#xa;    </elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="day">23</elem>
+<elem key="month">10</elem>
+<elem key="year">2008</elem>
+</table>
+</table>
+<elem key="disclosure">2008-10-23</elem>
+<table key="refs">
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250</elem>
+<elem>https://technet.microsoft.com/en-us/library/security/ms08-067.aspx</elem>
+</table>
+</table>
+</script><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-ms17-010" output="&#xa;  VULNERABLE:&#xa;  Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)&#xa;    State: VULNERABLE&#xa;    IDs:  CVE:CVE-2017-0143&#xa;    Risk factor: HIGH&#xa;      A critical remote code execution vulnerability exists in Microsoft SMBv1&#xa;       servers (ms17-010).&#xa;          &#xa;    Disclosure date: 2017-03-14&#xa;    References:&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143&#xa;      https://technet.microsoft.com/en-us/library/security/ms17-010.aspx&#xa;      https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/&#xa;"><table key="CVE-2017-0143">
+<elem key="title">Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="ids">
+<elem>CVE:CVE-2017-0143</elem>
+</table>
+<table key="description">
+<elem>A critical remote code execution vulnerability exists in Microsoft SMBv1&#xa; servers (ms17-010).&#xa;    </elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="day">14</elem>
+<elem key="month">03</elem>
+<elem key="year">2017</elem>
+</table>
+</table>
+<elem key="disclosure">2017-03-14</elem>
+<table key="refs">
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143</elem>
+<elem>https://technet.microsoft.com/en-us/library/security/ms17-010.aspx</elem>
+<elem>https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/</elem>
+</table>
+</table>
+</script></hostscript><times srtt="212961" rttvar="1797" to="220149"/>
+</host>
+<taskbegin task="NSE" time="1582699963"/>
+<taskend task="NSE" time="1582699963"/>
+<taskbegin task="NSE" time="1582699963"/>
+<taskend task="NSE" time="1582699963"/>
+<runstats><finished time="1582699963" timestr="Wed Feb 26 14:52:43 2020" elapsed="583.46" summary="Nmap done at Wed Feb 26 14:52:43 2020; 1 IP address (1 host up) scanned in 583.46 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

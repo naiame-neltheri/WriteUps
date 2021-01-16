@@ -1,0 +1,16 @@
+john --fork=2 --wordlist=~/Documents/Dictionaries/rockyou.txt crackme 
+Warning: detected hash type "md5crypt", but the string is also recognized as "md5crypt-long"
+Use the "--format=md5crypt-long" option to force loading these as that type instead
+Warning: detected hash type "md5crypt", but the string is also recognized as "md5crypt-opencl"
+Use the "--format=md5crypt-opencl" option to force loading these as that type instead
+Using default input encoding: UTF-8
+Loaded 1 password hash (md5crypt, crypt(3) $1$ (and variants) [MD5 128/128 AVX 4x3])
+Will run 2 OpenMP threads per process (4 total across 2 processes)
+Node numbers 1-2 of 2 (fork)
+Press 'q' or Ctrl-C to abort, almost any other key for status
+Nowonly4me       (david)
+2 1g 0:00:02:21 DONE (2020-03-10 19:58) 0.007076g/s 37427p/s 37427c/s 37427C/s Ntm@nag3!..Nowonly4me
+1 0g 0:00:02:28 81.74% (ETA: 19:59:06) 0g/s 38812p/s 38812c/s 38812C/s 88balletkb#..88KENNYA
+Waiting for 1 child to terminate
+Session aborted
+

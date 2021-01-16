@@ -1,0 +1,10 @@
+# Nmap 7.91 scan initiated Mon Nov 16 23:15:13 2020 as: nmap -v -sS -sV -Pn -oA nmap/default 10.10.10.198
+Nmap scan report for postmaster (10.10.10.198)
+Host is up (0.18s latency).
+Not shown: 999 filtered ports
+PORT     STATE SERVICE VERSION
+8080/tcp open  http    Apache httpd 2.4.43 ((Win64) OpenSSL/1.1.1g PHP/7.4.6)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Nov 16 23:15:40 2020 -- 1 IP address (1 host up) scanned in 27.65 seconds

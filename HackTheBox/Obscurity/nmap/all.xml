@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Apr 12 21:26:48 2020 as: nmap -sS -sV -v -Pn -oA nmap/all -p- 10.10.10.168 -->
+<nmaprun scanner="nmap" args="nmap -sS -sV -v -Pn -oA nmap/all -p- 10.10.10.168" start="1586698008" startstr="Sun Apr 12 21:26:48 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1586698009"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1586698009"/>
+<taskbegin task="SYN Stealth Scan" time="1586698009"/>
+<taskprogress task="SYN Stealth Scan" time="1586698040" percent="6.44" remaining="451" etc="1586698490"/>
+<taskprogress task="SYN Stealth Scan" time="1586698070" percent="15.23" remaining="340" etc="1586698410"/>
+<taskprogress task="SYN Stealth Scan" time="1586698100" percent="24.32" remaining="284" etc="1586698383"/>
+<taskprogress task="SYN Stealth Scan" time="1586698130" percent="36.37" remaining="212" etc="1586698342"/>
+<taskprogress task="SYN Stealth Scan" time="1586698160" percent="51.92" remaining="140" etc="1586698300"/>
+<taskprogress task="SYN Stealth Scan" time="1586698190" percent="68.36" remaining="84" etc="1586698274"/>
+<taskprogress task="SYN Stealth Scan" time="1586698220" percent="79.46" remaining="55" etc="1586698275"/>
+<taskprogress task="SYN Stealth Scan" time="1586698250" percent="86.76" remaining="37" etc="1586698287"/>
+<taskend task="SYN Stealth Scan" time="1586698291" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1586698291"/>
+<taskend task="Service scan" time="1586698309" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1586698309"/>
+<taskend task="NSE" time="1586698310"/>
+<taskbegin task="NSE" time="1586698310"/>
+<taskend task="NSE" time="1586698310"/>
+<host starttime="1586698009" endtime="1586698310"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.168" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65531">
+<extrareasons reason="no-responses" count="65531"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4ubuntu0.3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="63"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http-proxy" product="BadHTTPServer" servicefp="SF-Port8080-TCP:V=7.80%I=7%D=4/12%Time=5E93183A%P=x86_64-unknown-linux-gnu%r(GetRequest,10FC,&quot;HTTP/1\.1\x20200\x20OK\nDate:\x20Sun,\x2012\x20Apr\x202020\x2013:31:10\nServer:\x20BadHTTPServer\nLast-Modified:\x20Sun,\x2012\x20Apr\x202020\x2013:31:10\nContent-Length:\x204171\nContent-Type:\x20text/html\nConnection:\x20Closed\n\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=\&quot;en\&quot;&gt;\n&lt;head&gt;\n\t&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n\t&lt;title&gt;0bscura&lt;/title&gt;\n\t&lt;meta\x20http-equiv=\&quot;X-UA-Compatible\&quot;\x20content=\&quot;IE=Edge\&quot;&gt;\n\t&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1\&quot;&gt;\n\t&lt;meta\x20name=\&quot;keywords\&quot;\x20content=\&quot;\&quot;&gt;\n\t&lt;meta\x20name=\&quot;description\&quot;\x20content=\&quot;\&quot;&gt;\n&lt;!-&#45;\x20\nEasy\x20Profile\x20Template\nhttp://www\.templatemo\.com/tm-467-easy-profile\n-&#45;&gt;\n\t&lt;!-&#45;\x20stylesheet\x20css\x20-&#45;&gt;\n\t&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;css/bootstrap\.min\.css\&quot;&gt;\n\t&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;css/font-awesome\.min\.css\&quot;&gt;\n\t&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;css/templatemo-blue\.css\&quot;&gt;\n&lt;/head&gt;\n&lt;body\x20data-spy=\&quot;scroll\&quot;\x20data-target=\&quot;\.navbar-collapse\&quot;&gt;\n\n&lt;!-&#45;\x20preloader\x20section\x20-&#45;&gt;\n&lt;!-&#45;\n&lt;div\x20class=\&quot;preloader\&quot;&gt;\n\t&lt;div\x20class=\&quot;sk-spinner\x20sk-spinner-wordpress\&quot;&gt;\n&quot;)%r(HTTPOptions,10FC,&quot;HTTP/1\.1\x20200\x20OK\nDate:\x20Sun,\x2012\x20Apr\x202020\x2013:31:10\nServer:\x20BadHTTPServer\nLast-Modified:\x20Sun,\x2012\x20Apr\x202020\x2013:31:10\nContent-Length:\x204171\nContent-Type:\x20text/html\nConnection:\x20Closed\n\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=\&quot;en\&quot;&gt;\n&lt;head&gt;\n\t&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n\t&lt;title&gt;0bscura&lt;/title&gt;\n\t&lt;meta\x20http-equiv=\&quot;X-UA-Compatible\&quot;\x20content=\&quot;IE=Edge\&quot;&gt;\n\t&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1\&quot;&gt;\n\t&lt;meta\x20name=\&quot;keywords\&quot;\x20content=\&quot;\&quot;&gt;\n\t&lt;meta\x20name=\&quot;description\&quot;\x20content=\&quot;\&quot;&gt;\n&lt;!-&#45;\x20\nEasy\x20Profile\x20Template\nhttp://www\.templatemo\.com/tm-467-easy-profile\n-&#45;&gt;\n\t&lt;!-&#45;\x20stylesheet\x20css\x20-&#45;&gt;\n\t&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;css/bootstrap\.min\.css\&quot;&gt;\n\t&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;css/font-awesome\.min\.css\&quot;&gt;\n\t&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;css/templatemo-blue\.css\&quot;&gt;\n&lt;/head&gt;\n&lt;body\x20data-spy=\&quot;scroll\&quot;\x20data-target=\&quot;\.navbar-collapse\&quot;&gt;\n\n&lt;!-&#45;\x20preloader\x20section\x20-&#45;&gt;\n&lt;!-&#45;\n&lt;div\x20class=\&quot;preloader\&quot;&gt;\n\t&lt;div\x20class=\&quot;sk-spinner\x20sk-spinner-wordpress\&quot;&gt;\n&quot;);" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="9000"><state state="closed" reason="reset" reason_ttl="63"/><service name="cslistener" method="table" conf="3"/></port>
+</ports>
+<times srtt="183023" rttvar="2653" to="193635"/>
+</host>
+<runstats><finished time="1586698310" timestr="Sun Apr 12 21:31:50 2020" elapsed="301.76" summary="Nmap done at Sun Apr 12 21:31:50 2020; 1 IP address (1 host up) scanned in 301.76 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

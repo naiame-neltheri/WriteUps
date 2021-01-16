@@ -1,0 +1,28 @@
+# Nmap 7.80 scan initiated Tue Mar 31 19:45:51 2020 as: nmap -v -sS -sV -Pn -T3 -p- -oA nmap-all 10.10.10.171
+Nmap scan report for 10.10.10.171
+Host is up (0.14s latency).
+Not shown: 65517 closed ports
+PORT      STATE    SERVICE        VERSION
+22/tcp    open     ssh            OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+80/tcp    open     http           Apache httpd 2.4.29 ((Ubuntu))
+1308/tcp  filtered odsi
+1682/tcp  filtered lanyon-lantern
+7359/tcp  filtered swx
+18831/tcp filtered unknown
+22512/tcp filtered unknown
+22623/tcp filtered unknown
+23111/tcp filtered unknown
+24391/tcp filtered unknown
+33004/tcp filtered unknown
+34330/tcp filtered unknown
+35463/tcp filtered unknown
+35467/tcp filtered unknown
+41970/tcp filtered unknown
+45816/tcp filtered unknown
+57721/tcp filtered unknown
+61308/tcp filtered unknown
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Mar 31 20:29:19 2020 -- 1 IP address (1 host up) scanned in 2608.10 seconds

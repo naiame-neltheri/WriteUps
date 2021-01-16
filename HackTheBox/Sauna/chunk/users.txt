@@ -1,0 +1,11 @@
+Impacket v0.9.21.dev1+20200211.101047.70c38fbe - Copyright 2020 SecureAuth Corporation
+
+[*] Querying 10.10.10.175 for information about domain.
+Name                  Email                           PasswordLastSet      LastLogon           
+--------------------  ------------------------------  -------------------  -------------------
+Administrator                                         2020-01-25 01:14:15.321116  2020-02-11 00:16:17.478519 
+Guest                                                 <never>              <never>             
+krbtgt                                                2020-01-23 13:45:30.587720  <never>             
+HSmith                                                2020-01-23 13:54:34.140321  <never>             
+FSmith                                                2020-01-24 00:45:19.047096  2020-06-22 00:39:20.429903 
+svc_loanmgr                                           2020-01-25 07:48:31.678079  <never>             

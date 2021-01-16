@@ -1,0 +1,7 @@
+ 2020/02/14 14:31:39 >  [+] VALID USERNAME:	 Andy@htb.local
+2020/02/14 14:35:57 >  [+] VALID USERNAME:	 Johnny@htb.local
+2020/02/14 14:37:14 >  [+] VALID USERNAME:	 Lucinda@htb.local
+2020/02/14 14:37:31 >  [+] VALID USERNAME:	 Mark@htb.local
+
+2020/02/14 14:46:37 >  [+] VALID USERNAME:	 administrator@htb.local
+

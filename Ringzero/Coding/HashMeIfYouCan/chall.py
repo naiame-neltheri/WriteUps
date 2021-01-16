@@ -3,7 +3,7 @@ import hashlib
 import time
 
 BASE_URL = "https://ringzer0ctf.com/challenges/13"
-M_COOKIE = dict(PHPSESSID="5ljcq42rd6bl01liavlp08mcf7")
+M_COOKIE = dict(PHPSESSID="tmbsmobclglubhj7mfdshtvoj7")
 
 def generate_data(): # Send request to base url extract the problem string
 	r = requests.get(BASE_URL, cookies = M_COOKIE)

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Apr 12 15:44:46 2020 as: nmap -v -Pn -p- -sC -sV -oA nmap/all 10.10.10.162 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -sC -sV -oA nmap/all 10.10.10.162" start="1586677486" startstr="Sun Apr 12 15:44:46 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1586677486"/>
+<taskend task="NSE" time="1586677486"/>
+<taskbegin task="NSE" time="1586677486"/>
+<taskend task="NSE" time="1586677486"/>
+<taskbegin task="NSE" time="1586677486"/>
+<taskend task="NSE" time="1586677486"/>
+<taskbegin task="SYN Stealth Scan" time="1586677486"/>
+<taskprogress task="SYN Stealth Scan" time="1586677517" percent="5.39" remaining="545" etc="1586678062"/>
+<taskprogress task="SYN Stealth Scan" time="1586677547" percent="6.14" remaining="934" etc="1586678480"/>
+<taskprogress task="SYN Stealth Scan" time="1586677655" percent="16.06" remaining="884" etc="1586678538"/>
+<taskprogress task="SYN Stealth Scan" time="1586677835" percent="29.62" remaining="830" etc="1586678664"/>
+<taskprogress task="SYN Stealth Scan" time="1586677940" percent="37.12" remaining="770" etc="1586678709"/>
+<taskprogress task="SYN Stealth Scan" time="1586678027" percent="43.37" remaining="707" etc="1586678734"/>
+<taskprogress task="SYN Stealth Scan" time="1586678099" percent="48.75" remaining="645" etc="1586678744"/>
+<taskprogress task="SYN Stealth Scan" time="1586678171" percent="54.06" remaining="583" etc="1586678753"/>
+<taskprogress task="SYN Stealth Scan" time="1586678243" percent="59.41" remaining="518" etc="1586678760"/>
+<taskprogress task="SYN Stealth Scan" time="1586678309" percent="64.65" remaining="451" etc="1586678759"/>
+<taskprogress task="SYN Stealth Scan" time="1586678369" percent="69.73" remaining="384" etc="1586678752"/>
+<taskprogress task="SYN Stealth Scan" time="1586678435" percent="74.91" remaining="318" etc="1586678753"/>
+<taskprogress task="SYN Stealth Scan" time="1586678516" percent="80.28" remaining="254" etc="1586678769"/>
+<taskprogress task="SYN Stealth Scan" time="1586678585" percent="85.41" remaining="188" etc="1586678773"/>
+<taskprogress task="SYN Stealth Scan" time="1586678651" percent="90.53" remaining="122" etc="1586678773"/>
+<taskprogress task="SYN Stealth Scan" time="1586678726" percent="95.70" remaining="56" etc="1586678782"/>
+<taskend task="SYN Stealth Scan" time="1586678811" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1586678811"/>
+<taskend task="Service scan" time="1586678824" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1586678824"/>
+<taskend task="NSE" time="1586678832"/>
+<taskbegin task="NSE" time="1586678832"/>
+<taskend task="NSE" time="1586678834"/>
+<taskbegin task="NSE" time="1586678834"/>
+<taskend task="NSE" time="1586678834"/>
+<host starttime="1586677486" endtime="1586678834"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.162" addrtype="ipv4"/>
+<hostnames>
+<hostname name="staging-order.mango.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="resets" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4ubuntu0.3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 a8:8f:d9:6f:a6:e4:ee:56:e3:ef:54:54:6d:56:0c:f5 (RSA)&#xa;  256 6a:1c:ba:89:1e:b0:57:2f:fe:63:e1:61:72:89:b4:cf (ECDSA)&#xa;  256 90:70:fb:6f:38:ae:dc:3b:0b:31:68:64:b0:4e:7d:c9 (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDXYCdNRHET98F1ZTM+H8yrD9KXeRjvIk9e78JkHdzcqCq6zcvYIqEZReb3FSCChJ9mxK6E6vu5xBY7R6Gi0V31dx0koyaieEMd67PU+9UcjaAujbDS3UgYzySN+c5GV/ssmA6wWHu4zz+k+qztqdYFPh0/TgrC/wNPWHOKdpivgoyk3+F/retyGdKUNGjypXrw6v1faHiLOIO+zNHorxB304XmSLEFswiOS8UsjplIbud2KhWPEkY4s4FyjlpfpVdgPljbjijm7kcPNgpTXLXE51oNE3Q5w7ufO5ulo3Pqm0x+4d+SEpCE4g0+Yb020zK+JlKsp2tFJyLqTLan1buN</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">a88fd96fa6e4ee56e3ef54546d560cf5</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDqSZ4iBMzBrw2lEFKYlwO2qmw0WPf76ZhnvWGK+LJcHxvNa4OQ/hGuBWCjVlTcMbn1Te7D8jGwPgbcVpuaEld8=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">6a1cba891eb0572ffe63e1617289b4cf</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIB1sFdLYacK+1f4J+i+NCAhG+bj8xzzydNhqA1Ndo/xt</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">9070fb6f38aedc3b0b316864b04e7dc9</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.29" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service><script id="http-cookie-flags" output="&#xa;  /: &#xa;    PHPSESSID: &#xa;      httponly flag not set"><table key="/">
+<table key="PHPSESSID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.29 (Ubuntu)"><elem>Apache/2.4.29 (Ubuntu)</elem>
+</script><script id="http-title" output="Mango | Sweet &amp; Juicy"><elem key="title">Mango | Sweet &amp; Juicy</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.29" extrainfo="(Ubuntu)" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.29 (Ubuntu)"><elem>Apache/2.4.29 (Ubuntu)</elem>
+</script><script id="http-title" output="Mango | Search Base"><elem key="title">Mango | Search Base</elem>
+</script><script id="ssl-cert" output="Subject: commonName=staging-order.mango.htb/organizationName=Mango Prv Ltd./stateOrProvinceName=None/countryName=IN&#xa;Issuer: commonName=staging-order.mango.htb/organizationName=Mango Prv Ltd./stateOrProvinceName=None/countryName=IN&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2019-09-27T14:21:19&#xa;Not valid after:  2020-09-26T14:21:19&#xa;MD5:   b797 d14d 485f eac3 5cc6 2fed bb7a 2ce6&#xa;SHA-1: b329 9eca 2892 af1b 5895 053b f30e 861f 1c03 db95"><table key="subject">
+<elem key="stateOrProvinceName">None</elem>
+<elem key="emailAddress">admin@mango.htb</elem>
+<elem key="organizationalUnitName">None</elem>
+<elem key="organizationName">Mango Prv Ltd.</elem>
+<elem key="countryName">IN</elem>
+<elem key="localityName">None</elem>
+<elem key="commonName">staging-order.mango.htb</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">None</elem>
+<elem key="emailAddress">admin@mango.htb</elem>
+<elem key="organizationalUnitName">None</elem>
+<elem key="organizationName">Mango Prv Ltd.</elem>
+<elem key="countryName">IN</elem>
+<elem key="localityName">None</elem>
+<elem key="commonName">staging-order.mango.htb</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x564614229788</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x564614229748</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">85:AD:9B:04:E6:57:A3:81:32:7E:8B:D6:FA:9B:C5:2C:65:56:05:11</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">keyid:85:AD:9B:04:E6:57:A3:81:32:7E:8B:D6:FA:9B:C5:2C:65:56:05:11&#xa;</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">CA:TRUE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2019-09-27T14:21:19</elem>
+<elem key="notAfter">2020-09-26T14:21:19</elem>
+</table>
+<elem key="md5">b797d14d485feac35cc62fedbb7a2ce6</elem>
+<elem key="sha1">b3299eca2892af1b5895053bf30e861f1c03db95</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEAjCCAuqgAwIBAgIJAK5QiSmoBvEyMA0GCSqGSIb3DQEBCwUAMIGVMQswCQYD&#xa;VQQGEwJJTjENMAsGA1UECAwETm9uZTENMAsGA1UEBwwETm9uZTEXMBUGA1UECgwO&#xa;TWFuZ28gUHJ2IEx0ZC4xDTALBgNVBAsMBE5vbmUxIDAeBgNVBAMMF3N0YWdpbmct&#xa;b3JkZXIubWFuZ28uaHRiMR4wHAYJKoZIhvcNAQkBFg9hZG1pbkBtYW5nby5odGIw&#xa;HhcNMTkwOTI3MTQyMTE5WhcNMjAwOTI2MTQyMTE5WjCBlTELMAkGA1UEBhMCSU4x&#xa;DTALBgNVBAgMBE5vbmUxDTALBgNVBAcMBE5vbmUxFzAVBgNVBAoMDk1hbmdvIFBy&#xa;diBMdGQuMQ0wCwYDVQQLDAROb25lMSAwHgYDVQQDDBdzdGFnaW5nLW9yZGVyLm1h&#xa;bmdvLmh0YjEeMBwGCSqGSIb3DQEJARYPYWRtaW5AbWFuZ28uaHRiMIIBIjANBgkq&#xa;hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5fimSfgq3xsdUkZ6dcbqGPDmCAJJBOK2&#xa;f5a25At3Ht5r1SjiIuvovDSmMHjVmlbF6qX7C6f7Um+1Vtv/BinZfpuMEesyDH0V&#xa;G/4X5r6o1GMfrvjvAXQ2cuVEIxHGH17JM6gKKEppnguFwVMhC4/KUIjuaBXX9udA&#xa;9eaFJeiYEpdfSUVysoxQDdiTJhwyUIPnsFrf021nVOI1/TJkHAgLzxl1vxrMnwrL&#xa;2fLygDt1IQN8UhGF/2UTk3lVfEse2f2kvv6GbmjxBGfWCNA/Aj810OEGVMiS5SLr&#xa;arIXCGVl953QCD9vi+tHB/c+ICaTtHd0Ziu/gGbdKdCItND1r9kOEQIDAQABo1Mw&#xa;UTAdBgNVHQ4EFgQUha2bBOZXo4EyfovW+pvFLGVWBREwHwYDVR0jBBgwFoAUha2b&#xa;BOZXo4EyfovW+pvFLGVWBREwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsF&#xa;AAOCAQEAmyhYweHz0az0j6UyTYlUAUKY7o/wBHE55UcekmWi0XVdIseUxBGZasL9&#xa;HJki3dQ0mOEW4Ej28StNiDKPvWJhTDLA1ZjUOaW2Jg20uDcIiJ98XbdBvSgjR6FJ&#xa;JqtPYnhx7oOigKsBGYXXYAxoiCFarcyPyB7konNuXUqlf7iz2oLl/FsvJEl+YMgZ&#xa;YtrgOLbEO6/Lot/yX9JBeG1z8moJ0g+8ouCbUYI1Xcxipp0Cp2sK1nrfHEPaSjBB&#xa;Os2YQBdvVXJau7pt9zJmPVMhrLesf+bW5CN0WpC/AE1M1j6AfkX64jKpIMS6KAUP&#xa;/UKaUcFaDwjlaDEvbXPdwpmk4vVWqg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+</ports>
+<times srtt="176518" rttvar="2329" to="185834"/>
+</host>
+<taskbegin task="NSE" time="1586678834"/>
+<taskend task="NSE" time="1586678834"/>
+<taskbegin task="NSE" time="1586678834"/>
+<taskend task="NSE" time="1586678834"/>
+<taskbegin task="NSE" time="1586678834"/>
+<taskend task="NSE" time="1586678834"/>
+<runstats><finished time="1586678834" timestr="Sun Apr 12 16:07:14 2020" elapsed="1347.79" summary="Nmap done at Sun Apr 12 16:07:14 2020; 1 IP address (1 host up) scanned in 1347.79 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

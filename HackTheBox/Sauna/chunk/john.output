@@ -1,0 +1,14 @@
+Using default input encoding: UTF-8
+Loaded 1 password hash (krb5asrep, Kerberos 5 AS-REP etype 17/18/23 [MD4 HMAC-MD5 RC4 / PBKDF2 HMAC-SHA1 AES 128/128 AVX 4x])
+Warning: OpenMP was disabled due to --fork; a non-OpenMP build may be faster
+Node numbers 1-4 of 4 (fork)
+Press 'q' or Ctrl-C to abort, almost any other key for status
+Thestrokes23     ($krb5asrep$fsmith@EGOTISTICAL-BANK.LOCAL)
+1 1g 0:00:00:14 DONE (2020-06-21 10:47) 0.06958g/s 183344p/s 183344c/s 183344C/s Thetick2000..Thesolehacker1
+Waiting for 3 children to terminate
+3 0g 0:00:00:14 DONE (2020-06-21 10:47) 0g/s 183288p/s 183288c/s 183288C/s Teampink07..Teamosam22
+4 0g 0:00:00:14 DONE (2020-06-21 10:47) 0g/s 183297p/s 183297c/s 183297C/s TeKieroe26..TeIkA012
+2 0g 0:00:00:14 DONE (2020-06-21 10:47) 0g/s 183290p/s 183290c/s 183290C/s Teamochikitalinda..TeamoTeamo1
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed
+

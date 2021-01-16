@@ -1,0 +1,53 @@
+# Nmap 7.80 scan initiated Sun Mar 29 16:48:49 2020 as: nmap -v -Pn -sS -sV --script=vuln -oA nmap 10.10.10.159
+Nmap scan report for 10.10.10.159
+Host is up (0.20s latency).
+Not shown: 997 closed ports
+PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+80/tcp  open  http     nginx 1.14.0 (Ubuntu)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|_  /install/: Potentially interesting folder
+|_http-server-header: nginx/1.14.0 (Ubuntu)
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-vuln-cve2011-3192: 
+|   VULNERABLE:
+|   Apache byterange filter DoS
+|     State: VULNERABLE
+|     IDs:  BID:49303  CVE:CVE-2011-3192
+|       The Apache web server is vulnerable to a denial of service attack when numerous
+|       overlapping byte ranges are requested.
+|     Disclosure date: 2011-08-19
+|     References:
+|       https://www.securityfocus.com/bid/49303
+|       https://seclists.org/fulldisclosure/2011/Aug/175
+|       https://www.tenable.com/plugins/nessus/55976
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192
+443/tcp open  ssl/http nginx 1.14.0 (Ubuntu)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-server-header: nginx/1.14.0 (Ubuntu)
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-vuln-cve2011-3192: 
+|   VULNERABLE:
+|   Apache byterange filter DoS
+|     State: VULNERABLE
+|     IDs:  BID:49303  CVE:CVE-2011-3192
+|       The Apache web server is vulnerable to a denial of service attack when numerous
+|       overlapping byte ranges are requested.
+|     Disclosure date: 2011-08-19
+|     References:
+|       https://www.securityfocus.com/bid/49303
+|       https://seclists.org/fulldisclosure/2011/Aug/175
+|       https://www.tenable.com/plugins/nessus/55976
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192
+|_sslv2-drown: 
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 29 16:57:01 2020 -- 1 IP address (1 host up) scanned in 491.73 seconds

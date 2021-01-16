@@ -1,0 +1,49 @@
+# Nmap 7.80 scan initiated Sun Apr 12 20:33:57 2020 as: nmap -v -sS -sV -Pn -oA nmap/nmap 10.10.10.168
+Nmap scan report for 10.10.10.168
+Host is up (0.18s latency).
+Not shown: 996 filtered ports
+PORT     STATE  SERVICE    VERSION
+22/tcp   open   ssh        OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+80/tcp   closed http
+8080/tcp open   http-proxy BadHTTPServer
+9000/tcp closed cslistener
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8080-TCP:V=7.80%I=7%D=4/12%Time=5E930AC8%P=x86_64-unknown-linux-gnu
+SF:%r(GetRequest,10FC,"HTTP/1\.1\x20200\x20OK\nDate:\x20Sun,\x2012\x20Apr\
+SF:x202020\x2012:33:48\nServer:\x20BadHTTPServer\nLast-Modified:\x20Sun,\x
+SF:2012\x20Apr\x202020\x2012:33:48\nContent-Length:\x204171\nContent-Type:
+SF:\x20text/html\nConnection:\x20Closed\n\n<!DOCTYPE\x20html>\n<html\x20la
+SF:ng=\"en\">\n<head>\n\t<meta\x20charset=\"utf-8\">\n\t<title>0bscura</ti
+SF:tle>\n\t<meta\x20http-equiv=\"X-UA-Compatible\"\x20content=\"IE=Edge\">
+SF:\n\t<meta\x20name=\"viewport\"\x20content=\"width=device-width,\x20init
+SF:ial-scale=1\">\n\t<meta\x20name=\"keywords\"\x20content=\"\">\n\t<meta\
+SF:x20name=\"description\"\x20content=\"\">\n<!--\x20\nEasy\x20Profile\x20
+SF:Template\nhttp://www\.templatemo\.com/tm-467-easy-profile\n-->\n\t<!--\
+SF:x20stylesheet\x20css\x20-->\n\t<link\x20rel=\"stylesheet\"\x20href=\"cs
+SF:s/bootstrap\.min\.css\">\n\t<link\x20rel=\"stylesheet\"\x20href=\"css/f
+SF:ont-awesome\.min\.css\">\n\t<link\x20rel=\"stylesheet\"\x20href=\"css/t
+SF:emplatemo-blue\.css\">\n</head>\n<body\x20data-spy=\"scroll\"\x20data-t
+SF:arget=\"\.navbar-collapse\">\n\n<!--\x20preloader\x20section\x20-->\n<!
+SF:--\n<div\x20class=\"preloader\">\n\t<div\x20class=\"sk-spinner\x20sk-sp
+SF:inner-wordpress\">\n")%r(HTTPOptions,10FC,"HTTP/1\.1\x20200\x20OK\nDate
+SF::\x20Sun,\x2012\x20Apr\x202020\x2012:33:48\nServer:\x20BadHTTPServer\nL
+SF:ast-Modified:\x20Sun,\x2012\x20Apr\x202020\x2012:33:48\nContent-Length:
+SF:\x204171\nContent-Type:\x20text/html\nConnection:\x20Closed\n\n<!DOCTYP
+SF:E\x20html>\n<html\x20lang=\"en\">\n<head>\n\t<meta\x20charset=\"utf-8\"
+SF:>\n\t<title>0bscura</title>\n\t<meta\x20http-equiv=\"X-UA-Compatible\"\
+SF:x20content=\"IE=Edge\">\n\t<meta\x20name=\"viewport\"\x20content=\"widt
+SF:h=device-width,\x20initial-scale=1\">\n\t<meta\x20name=\"keywords\"\x20
+SF:content=\"\">\n\t<meta\x20name=\"description\"\x20content=\"\">\n<!--\x
+SF:20\nEasy\x20Profile\x20Template\nhttp://www\.templatemo\.com/tm-467-eas
+SF:y-profile\n-->\n\t<!--\x20stylesheet\x20css\x20-->\n\t<link\x20rel=\"st
+SF:ylesheet\"\x20href=\"css/bootstrap\.min\.css\">\n\t<link\x20rel=\"style
+SF:sheet\"\x20href=\"css/font-awesome\.min\.css\">\n\t<link\x20rel=\"style
+SF:sheet\"\x20href=\"css/templatemo-blue\.css\">\n</head>\n<body\x20data-s
+SF:py=\"scroll\"\x20data-target=\"\.navbar-collapse\">\n\n<!--\x20preloade
+SF:r\x20section\x20-->\n<!--\n<div\x20class=\"preloader\">\n\t<div\x20clas
+SF:s=\"sk-spinner\x20sk-spinner-wordpress\">\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Apr 12 20:34:28 2020 -- 1 IP address (1 host up) scanned in 31.29 seconds

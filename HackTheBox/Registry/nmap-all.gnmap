@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Sun Mar 29 18:07:32 2020 as: nmap -v -Pn -p- -sS -sV -T5 --script=vuln -oA nmap-all 10.10.10.159
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.159 (docker.registry.htb)	Status: Up
+Host: 10.10.10.159 (docker.registry.htb)	Status: Timeout
+# Nmap done at Sun Mar 29 18:22:43 2020 -- 1 IP address (1 host up) scanned in 910.87 seconds

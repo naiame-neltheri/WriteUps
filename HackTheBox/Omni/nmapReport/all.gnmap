@@ -1,0 +1,5 @@
+# Nmap 7.91 scan initiated Sat Nov 28 01:23:23 2020 as: nmap -v -sS -sV -p- -Pn -T4 -oA nmapReport/all 10.10.10.204
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.204 ()	Status: Up
+Host: 10.10.10.204 ()	Ports: 135/open/tcp//msrpc//Microsoft Windows RPC/, 5985/open/tcp//upnp//Microsoft IIS httpd/, 8080/open/tcp//upnp//Microsoft IIS httpd/, 29817/open/tcp/////, 29819/open/tcp//arcserve//ARCserve Discovery/, 29820/open/tcp//unknown///	Ignored State: filtered (65529)
+# Nmap done at Sat Nov 28 01:27:26 2020 -- 1 IP address (1 host up) scanned in 242.28 seconds

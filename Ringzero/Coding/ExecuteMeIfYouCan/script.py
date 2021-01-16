@@ -1,7 +1,8 @@
+from pwn import *
 import os, sys, subprocess
 import requests
 
-M_COOKIES = dict(PHPSESSID="1sv3nggb2isq3lse9cc4puim62")
+M_COOKIES = dict(PHPSESSID="bbf5ir5ctqdvs8v9vb7r6is9u7")
 BASE_URL = "https://ringzer0ctf.com/challenges/121"
 
 def print_banner():
@@ -52,9 +53,11 @@ if "__main__" in __name__:
 	content = get_content()
 	generate_file(content)
 	# gcc -fno-stack-protector -z execstack tmp.c -o test
-	cmd = ['gcc', '-fno-stack-protector', '-zexecstack', 'tmp.c', '-otest']
+	cmd = ['gcc', '-fno-stack-protector', '-zexecstack', '-g', 'tmp.c', '-otest']
 	subprocess.run(cmd, stdout = subprocess.PIPE)
-	res = subprocess.Popen(["./test"], stdout = subprocess.PIPE)
-	(output, error) = res.communicate()
-	print("RESULT : {}".format(output))
-	# send_flag(str(ans))
+	# attach GDB get memory value in RSI
+	gdbIo = gdb.debug('./test')
+	# res = subprocess.Popen(["./test"], stdout = subprocess.PIPE)
+	# (output, error) = res.communicate()
+	# print("RESULT : {}".format(output))
+	# # send_flag(str(ans))

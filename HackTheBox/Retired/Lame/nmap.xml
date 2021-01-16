@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Feb 26 14:10:26 2020 as: nmap -v -sS -sV -Pn -p- -f -T5 -&#45;script=vuln -oX /home/naiame/Documents/WriteUps/HackTheBox/Retired/Lame/nmap.xml 10.10.10.3 -->
+<nmaprun scanner="nmap" args="nmap -v -sS -sV -Pn -p- -f -T5 -&#45;script=vuln -oX /home/naiame/Documents/WriteUps/HackTheBox/Retired/Lame/nmap.xml 10.10.10.3" start="1582697426" startstr="Wed Feb 26 14:10:26 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1582697426"/>
+<taskprogress task="NSE" time="1582697432" percent="0.00"/>
+<taskend task="NSE" time="1582697460"/>
+<taskbegin task="NSE" time="1582697460"/>
+<taskend task="NSE" time="1582697460"/>
+<prescript><script id="broadcast-avahi-dos" output="&#xa;  Discovered hosts:&#xa;    224.0.0.251&#xa;  After NULL UDP avahi packet DoS (CVE-2011-1002).&#xa;  Hosts are all up (not vulnerable).&#xa;"/></prescript><taskbegin task="Parallel DNS resolution of 1 host." time="1582697460"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1582697460"/>
+<taskbegin task="SYN Stealth Scan" time="1582697460"/>
+<taskprogress task="SYN Stealth Scan" time="1582697491" percent="8.51" remaining="334" etc="1582697824"/>
+<taskprogress task="SYN Stealth Scan" time="1582697521" percent="23.26" remaining="202" etc="1582697722"/>
+<taskprogress task="SYN Stealth Scan" time="1582697551" percent="41.51" remaining="129" etc="1582697679"/>
+<taskprogress task="SYN Stealth Scan" time="1582697581" percent="62.73" remaining="72" etc="1582697653"/>
+<taskend task="SYN Stealth Scan" time="1582697662" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1582697662"/>
+<taskend task="Service scan" time="1582697673" extrainfo="5 services on 1 host"/>
+<taskbegin task="NSE" time="1582697673"/>
+<taskprogress task="NSE" time="1582697677" percent="97.94" remaining="1" etc="1582697677"/>
+<taskend task="NSE" time="1582697696"/>
+<taskbegin task="NSE" time="1582697696"/>
+<taskend task="NSE" time="1582697696"/>
+<host starttime="1582697460" endtime="1582697696"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.3" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65530">
+<extrareasons reason="no-responses" count="65530"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ftp" product="vsftpd" version="2.3.4" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:2.3.4</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="sslv2-drown" output="&#xa;"></script></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="4.7p1 Debian 8ubuntu1" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:4.7p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="vulners" output="&#xa;  cpe:/a:openbsd:openssh:4.7p1: &#xa;    &#x9;CVE-2010-4478&#x9;7.5&#x9;https://vulners.com/cve/CVE-2010-4478&#xa;    &#x9;CVE-2017-15906&#x9;5.0&#x9;https://vulners.com/cve/CVE-2017-15906&#xa;    &#x9;CVE-2016-10708&#x9;5.0&#x9;https://vulners.com/cve/CVE-2016-10708&#xa;    &#x9;CVE-2010-4755&#x9;4.0&#x9;https://vulners.com/cve/CVE-2010-4755&#xa;    &#x9;CVE-2008-5161&#x9;2.6&#x9;https://vulners.com/cve/CVE-2008-5161"><table key="cpe:/a:openbsd:openssh:4.7p1">
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-4478</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-15906</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-10708</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-4755</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2008-5161</elem>
+<elem key="cvss">2.6</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-webexec" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-webexec" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="3632"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="distccd" product="distccd" version="v1" extrainfo="(GNU) 4.2.4 (Ubuntu 4.2.4-1ubuntu4)" method="probed" conf="10"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="distcc-cve2004-2687" output="&#xa;  VULNERABLE:&#xa;  distcc Daemon Command Execution&#xa;    State: VULNERABLE (Exploitable)&#xa;    IDs:  CVE:CVE-2004-2687&#xa;    Risk factor: High  CVSSv2: 9.3 (HIGH) (AV:N/AC:M/Au:N/C:C/I:C/A:C)&#xa;      Allows executing of arbitrary commands on systems running distccd 3.1 and&#xa;      earlier. The vulnerability is the consequence of weak service configuration.&#xa;      &#xa;    Disclosure date: 2002-02-01&#xa;    Extra information:&#xa;      &#xa;    uid=1(daemon) gid=1(daemon) groups=1(daemon)&#xa;  &#xa;    References:&#xa;      https://nvd.nist.gov/vuln/detail/CVE-2004-2687&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-2687&#xa;      https://distcc.github.io/security.html&#xa;"><table key="CVE-2004-2687">
+<elem key="title">distcc Daemon Command Execution</elem>
+<elem key="state">VULNERABLE (Exploitable)</elem>
+<table key="ids">
+<elem>CVE:CVE-2004-2687</elem>
+</table>
+<table key="scores">
+<elem key="CVSSv2">9.3 (HIGH) (AV:N/AC:M/Au:N/C:C/I:C/A:C)</elem>
+</table>
+<table key="description">
+<elem>Allows executing of arbitrary commands on systems running distccd 3.1 and&#xa;earlier. The vulnerability is the consequence of weak service configuration.&#xa;</elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="day">01</elem>
+<elem key="year">2002</elem>
+<elem key="month">02</elem>
+</table>
+</table>
+<elem key="disclosure">2002-02-01</elem>
+<table key="exploit_results">
+</table>
+<table key="extra_info">
+<elem>&#xa;  uid=1(daemon) gid=1(daemon) groups=1(daemon)&#xa;</elem>
+</table>
+<table key="refs">
+<elem>https://nvd.nist.gov/vuln/detail/CVE-2004-2687</elem>
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-2687</elem>
+<elem>https://distcc.github.io/security.html</elem>
+</table>
+</table>
+</script></port>
+</ports>
+<hostscript><script id="smb-double-pulsar-backdoor" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-cve-2017-7494" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-ms06-025" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-ms07-029" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-ms08-067" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="false">false</script><script id="smb-vuln-ms17-010" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-regsvc-dos" output="ERROR: Script execution failed (use -d to debug)"/></hostscript><times srtt="215469" rttvar="4565" to="233729"/>
+</host>
+<taskbegin task="NSE" time="1582697696"/>
+<taskend task="NSE" time="1582697696"/>
+<taskbegin task="NSE" time="1582697696"/>
+<taskend task="NSE" time="1582697696"/>
+<runstats><finished time="1582697696" timestr="Wed Feb 26 14:14:56 2020" elapsed="269.84" summary="Nmap done at Wed Feb 26 14:14:56 2020; 1 IP address (1 host up) scanned in 269.84 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

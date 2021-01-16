@@ -1,0 +1,5 @@
+# Nmap 7.91 scan initiated Sun Dec 20 14:38:40 2020 as: nmap -v -sS -sV -Pn -p- -O -oA nmapReport/all 10.10.10.209
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.209 (doctors.htb)	Status: Up
+Host: 10.10.10.209 (doctors.htb)	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.41 ((Ubuntu))/, 8089/open/tcp//ssl|http//Splunkd httpd/	Ignored State: filtered (65532)	Seq Index: 264	IP ID Seq: All zeros
+# Nmap done at Sun Dec 20 14:42:33 2020 -- 1 IP address (1 host up) scanned in 233.42 seconds

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Thu Mar  5 21:46:55 2020 as: nmap -v -Pn -T5 -sS -sV -D 10.10.14.1 -p- -&#45;script=vuln -oX nmap.xml 10.10.10.8 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -T5 -sS -sV -D 10.10.14.1 -p- -&#45;script=vuln -oX nmap.xml 10.10.10.8" start="1583416015" startstr="Thu Mar  5 21:46:55 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1583416015"/>
+<taskend task="NSE" time="1583416025"/>
+<taskbegin task="NSE" time="1583416025"/>
+<taskend task="NSE" time="1583416025"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1583416025"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1583416025"/>
+<taskbegin task="SYN Stealth Scan" time="1583416025"/>
+<taskprogress task="SYN Stealth Scan" time="1583416056" percent="6.82" remaining="424" etc="1583416479"/>
+<taskprogress task="SYN Stealth Scan" time="1583416086" percent="20.79" remaining="233" etc="1583416318"/>
+<taskprogress task="SYN Stealth Scan" time="1583416116" percent="34.32" remaining="175" etc="1583416290"/>
+<taskprogress task="SYN Stealth Scan" time="1583416146" percent="46.84" remaining="138" etc="1583416283"/>
+<taskprogress task="SYN Stealth Scan" time="1583416176" percent="60.39" remaining="100" etc="1583416275"/>
+<taskprogress task="SYN Stealth Scan" time="1583416206" percent="74.90" remaining="61" etc="1583416267"/>
+<taskend task="SYN Stealth Scan" time="1583416261" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1583416261"/>
+<taskend task="Service scan" time="1583416267" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1583416267"/>
+<taskend task="NSE" time="1583416868"/>
+<taskbegin task="NSE" time="1583416868"/>
+<taskend task="NSE" time="1583416869"/>
+<host starttime="1583416026" endtime="1583416869"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.8" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="HttpFileServer httpd" version="2.3" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:rejetto:httpfileserver:2.3</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-fileupload-exploiter" output="&#xa;  &#xa;    Couldn&apos;t find a file-type field."><table>
+<elem>Couldn&apos;t find a file-type field.</elem>
+</table>
+</script><script id="http-method-tamper" output="&#xa;  VULNERABLE:&#xa;  Authentication bypass by HTTP verb tampering&#xa;    State: VULNERABLE (Exploitable)&#xa;      This web server contains password protected resources vulnerable to authentication bypass&#xa;      vulnerabilities via HTTP verb tampering. This is often found in web servers that only limit access to the&#xa;       common HTTP methods and in misconfigured .htaccess files.&#xa;             &#xa;    Extra information:&#xa;      &#xa;  URIs suspected to be vulnerable to HTTP verb tampering:&#xa;    /~login [GENERIC]&#xa;  &#xa;    References:&#xa;      https://www.owasp.org/index.php/Testing_for_HTTP_Methods_and_XST_%28OWASP-CM-008%29&#xa;      http://www.imperva.com/resources/glossary/http_verb_tampering.html&#xa;      http://www.mkit.com.ar/labs/htexploit/&#xa;      http://capec.mitre.org/data/definitions/274.html&#xa;"><table key="NMAP-6">
+<elem key="title">Authentication bypass by HTTP verb tampering</elem>
+<elem key="state">VULNERABLE (Exploitable)</elem>
+<table key="description">
+<elem>This web server contains password protected resources vulnerable to authentication bypass&#xa;vulnerabilities via HTTP verb tampering. This is often found in web servers that only limit access to the&#xa; common HTTP methods and in misconfigured .htaccess files.&#xa;       </elem>
+</table>
+<table key="extra_info">
+<elem>&#xa;URIs suspected to be vulnerable to HTTP verb tampering:&#xa;  /~login [GENERIC]&#xa;</elem>
+</table>
+<table key="refs">
+<elem>https://www.owasp.org/index.php/Testing_for_HTTP_Methods_and_XST_%28OWASP-CM-008%29</elem>
+<elem>http://www.imperva.com/resources/glossary/http_verb_tampering.html</elem>
+<elem>http://www.mkit.com.ar/labs/htexploit/</elem>
+<elem>http://capec.mitre.org/data/definitions/274.html</elem>
+</table>
+</table>
+</script><script id="http-server-header" output="HFS 2.3"><elem>HFS 2.3</elem>
+</script><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-vuln-cve2011-3192" output="&#xa;  VULNERABLE:&#xa;  Apache byterange filter DoS&#xa;    State: VULNERABLE&#xa;    IDs:  BID:49303  CVE:CVE-2011-3192&#xa;      The Apache web server is vulnerable to a denial of service attack when numerous&#xa;      overlapping byte ranges are requested.&#xa;    Disclosure date: 2011-08-19&#xa;    References:&#xa;      https://seclists.org/fulldisclosure/2011/Aug/175&#xa;      https://www.tenable.com/plugins/nessus/55976&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192&#xa;      https://www.securityfocus.com/bid/49303&#xa;"><table key="CVE-2011-3192">
+<elem key="title">Apache byterange filter DoS</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="ids">
+<elem>BID:49303</elem>
+<elem>CVE:CVE-2011-3192</elem>
+</table>
+<table key="description">
+<elem>The Apache web server is vulnerable to a denial of service attack when numerous&#xa;overlapping byte ranges are requested.</elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="month">08</elem>
+<elem key="day">19</elem>
+<elem key="year">2011</elem>
+</table>
+</table>
+<elem key="disclosure">2011-08-19</elem>
+<table key="refs">
+<elem>https://seclists.org/fulldisclosure/2011/Aug/175</elem>
+<elem>https://www.tenable.com/plugins/nessus/55976</elem>
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192</elem>
+<elem>https://www.securityfocus.com/bid/49303</elem>
+</table>
+</table>
+</script></port>
+</ports>
+<times srtt="214478" rttvar="4183" to="231210"/>
+</host>
+<taskbegin task="NSE" time="1583416869"/>
+<taskend task="NSE" time="1583416869"/>
+<taskbegin task="NSE" time="1583416869"/>
+<taskend task="NSE" time="1583416869"/>
+<runstats><finished time="1583416869" timestr="Thu Mar  5 22:01:09 2020" elapsed="853.50" summary="Nmap done at Thu Mar  5 22:01:09 2020; 1 IP address (1 host up) scanned in 853.50 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

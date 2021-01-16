@@ -1,0 +1,19 @@
+# Nmap 7.91 scan initiated Sun Dec 20 14:38:40 2020 as: nmap -v -sS -sV -Pn -p- -O -oA nmapReport/all 10.10.10.209
+Nmap scan report for doctors.htb (10.10.10.209)
+Host is up (0.18s latency).
+Not shown: 65532 filtered ports
+PORT     STATE SERVICE  VERSION
+22/tcp   open  ssh      OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http     Apache httpd 2.4.41 ((Ubuntu))
+8089/tcp open  ssl/http Splunkd httpd
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 4.15 - 5.6 (92%), Linux 5.0 (92%), Linux 5.0 - 5.4 (91%), Linux 5.3 - 5.4 (91%), Linux 2.6.32 (91%), Linux 5.0 - 5.3 (90%), Crestron XPanel control system (90%), Linux 5.4 (89%), ASUS RT-N56U WAP (Linux 3.4) (87%), Linux 3.1 (87%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 30.706 days (since Thu Nov 19 21:46:11 2020)
+TCP Sequence Prediction: Difficulty=264 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Dec 20 14:42:33 2020 -- 1 IP address (1 host up) scanned in 233.42 seconds

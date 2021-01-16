@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Sat Nov 28 01:23:23 2020 as: nmap -v -sS -sV -p- -Pn -T4 -oA nmapReport/all 10.10.10.204 -->
+<nmaprun scanner="nmap" args="nmap -v -sS -sV -p- -Pn -T4 -oA nmapReport/all 10.10.10.204" start="1606497803" startstr="Sat Nov 28 01:23:23 2020" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1606497804"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1606497804"/>
+<taskbegin task="SYN Stealth Scan" time="1606497804"/>
+<taskprogress task="SYN Stealth Scan" time="1606497835" percent="9.43" remaining="298" etc="1606498133"/>
+<taskprogress task="SYN Stealth Scan" time="1606497865" percent="24.62" remaining="187" etc="1606498052"/>
+<taskprogress task="SYN Stealth Scan" time="1606497895" percent="45.24" remaining="111" etc="1606498005"/>
+<taskprogress task="SYN Stealth Scan" time="1606497925" percent="68.82" remaining="55" etc="1606497980"/>
+<taskend task="SYN Stealth Scan" time="1606497966" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1606497966"/>
+<taskend task="Service scan" time="1606498038" extrainfo="6 services on 1 host"/>
+<taskbegin task="NSE" time="1606498038"/>
+<taskend task="NSE" time="1606498045"/>
+<taskbegin task="NSE" time="1606498045"/>
+<taskend task="NSE" time="1606498046"/>
+<host starttime="1606497804" endtime="1606498046"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.204" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65529">
+<extrareasons reason="no-responses" count="65529"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="upnp" product="Microsoft IIS httpd" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_server</cpe></service></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="upnp" product="Microsoft IIS httpd" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_server</cpe></service></port>
+<port protocol="tcp" portid="29817"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="29819"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="arcserve" product="ARCserve Discovery" hostname="PING" method="probed" conf="10"><cpe>cpe:/a:ca:arcserve_client_agent</cpe></service></port>
+<port protocol="tcp" portid="29820"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="unknown" servicefp="SF-Port29820-TCP:V=7.91%I=7%D=11/28%Time=5FC136B4%P=x86_64-unknown-linux-gnu%r(NULL,10,&quot;\*LY\xa5\xfb`\x04G\xa9m\x1c\xc9}\xc8O\x12&quot;)%r(GenericLines,10,&quot;\*LY\xa5\xfb`\x04G\xa9m\x1c\xc9}\xc8O\x12&quot;)%r(Help,10,&quot;\*LY\xa5\xfb`\x04G\xa9m\x1c\xc9}\xc8O\x12&quot;)%r(JavaRMI,10,&quot;\*LY\xa5\xfb`\x04G\xa9m\x1c\xc9}\xc8O\x12&quot;);" method="table" conf="3"/></port>
+</ports>
+<times srtt="175047" rttvar="1180" to="179767"/>
+</host>
+<runstats><finished time="1606498046" timestr="Sat Nov 28 01:27:26 2020" summary="Nmap done at Sat Nov 28 01:27:26 2020; 1 IP address (1 host up) scanned in 242.28 seconds" elapsed="242.28" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

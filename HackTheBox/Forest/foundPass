@@ -1,0 +1,15 @@
+Using default input encoding: UTF-8
+Loaded 1 password hash (krb5asrep, Kerberos 5 AS-REP etype 17/18/23 [MD4 HMAC-MD5 RC4 / PBKDF2 HMAC-SHA1 AES 128/128 AVX 4x])
+Warning: OpenMP was disabled due to --fork; a non-OpenMP build may be faster
+Node numbers 1-4 of 4 (fork)
+Press 'q' or Ctrl-C to abort, almost any other key for status
+s3rvice          (-alfresco@HTB.LOCAL)
+3 1g 0:00:00:05 DONE (2020-02-16 21:25) 0.1834g/s 187417p/s 187417c/s 187417C/s s3t1yo..s3rvice
+2: Warning: Only 1 candidate left, minimum 4 needed for performance.
+2 0g 0:00:00:16 DONE (2020-02-16 21:25) 0g/s 222177p/s 222177c/s 222177C/sa6_123
+1 0g 0:00:00:16 DONE (2020-02-16 21:25) 0g/s 217066p/s 217066c/s 217066C/s    333   .abygurl69
+Waiting for 3 children to terminate
+4: Warning: Only 1 candidate left, minimum 4 needed for performance.
+4 0g 0:00:00:17 DONE (2020-02-16 21:25) 0g/s 199329p/s 199329c/s 199329C/sie168
+Session completed
+

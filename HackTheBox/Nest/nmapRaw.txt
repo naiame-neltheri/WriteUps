@@ -1,0 +1,119 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-02-22 20:28 +08
+NSE: Loaded 149 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 20:28
+NSE Timing: About 50.00% done; ETC: 20:29 (0:00:31 remaining)
+Completed NSE at 20:28, 34.04s elapsed
+Initiating NSE at 20:28
+Completed NSE at 20:28, 0.00s elapsed
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Initiating Parallel DNS resolution of 1 host. at 20:28
+Completed Parallel DNS resolution of 1 host. at 20:28, 0.01s elapsed
+Initiating SYN Stealth Scan at 20:28
+Scanning 10.10.10.178 [65535 ports]
+Discovered open port 445/tcp on 10.10.10.178
+SYN Stealth Scan Timing: About 6.09% done; ETC: 20:37 (0:07:58 remaining)
+SYN Stealth Scan Timing: About 17.34% done; ETC: 20:34 (0:04:51 remaining)
+SYN Stealth Scan Timing: About 30.03% done; ETC: 20:33 (0:03:32 remaining)
+SYN Stealth Scan Timing: About 45.70% done; ETC: 20:33 (0:02:24 remaining)
+Discovered open port 4386/tcp on 10.10.10.178
+SYN Stealth Scan Timing: About 63.79% done; ETC: 20:32 (0:01:26 remaining)
+SYN Stealth Scan Timing: About 74.62% done; ETC: 20:32 (0:01:02 remaining)
+SYN Stealth Scan Timing: About 84.39% done; ETC: 20:32 (0:00:39 remaining)
+Completed SYN Stealth Scan at 20:33, 267.98s elapsed (65535 total ports)
+Initiating Service scan at 20:33
+Scanning 2 services on 10.10.10.178
+Stats: 0:06:52 elapsed; 0 hosts completed (1 up), 1 undergoing Service Scan
+Service scan Timing: About 50.00% done; ETC: 20:36 (0:01:50 remaining)
+Completed Service scan at 20:35, 164.63s elapsed (2 services on 1 host)
+Initiating OS detection (try #1) against 10.10.10.178
+Retrying OS detection (try #2) against 10.10.10.178
+NSE: Script scanning 10.10.10.178.
+Initiating NSE at 20:35
+Completed NSE at 20:36, 14.18s elapsed
+Initiating NSE at 20:36
+Completed NSE at 20:36, 1.59s elapsed
+Nmap scan report for 10.10.10.178
+Host is up (0.19s latency).
+Not shown: 65533 filtered ports
+PORT     STATE SERVICE       VERSION
+445/tcp  open  microsoft-ds?
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+4386/tcp open  unknown
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, NULL, RPCCheck, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServer, TerminalServerCookie, X11Probe: 
+|     Reporting Service V1.2
+|   FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, RTSPRequest, SIPOptions: 
+|     Reporting Service V1.2
+|     Unrecognised command
+|   Help: 
+|     Reporting Service V1.2
+|     This service allows users to run queries against databases using the legacy HQK format
+|     AVAILABLE COMMANDS ---
+|     LIST
+|     SETDIR <Directory_Name>
+|     RUNQUERY <Query_ID>
+|     DEBUG <Password>
+|_    HELP <Command>
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port4386-TCP:V=7.80%I=7%D=2/22%Time=5E511F88%P=x86_64-unknown-linux-gnu
+SF:%r(NULL,21,"\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n>")%r(Gener
+SF:icLines,3A,"\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n>\r\nUnreco
+SF:gnised\x20command\r\n>")%r(GetRequest,3A,"\r\nHQK\x20Reporting\x20Servi
+SF:ce\x20V1\.2\r\n\r\n>\r\nUnrecognised\x20command\r\n>")%r(HTTPOptions,3A
+SF:,"\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n>\r\nUnrecognised\x20
+SF:command\r\n>")%r(RTSPRequest,3A,"\r\nHQK\x20Reporting\x20Service\x20V1\
+SF:.2\r\n\r\n>\r\nUnrecognised\x20command\r\n>")%r(RPCCheck,21,"\r\nHQK\x2
+SF:0Reporting\x20Service\x20V1\.2\r\n\r\n>")%r(DNSVersionBindReqTCP,21,"\r
+SF:\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n>")%r(DNSStatusRequestTCP
+SF:,21,"\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n>")%r(Help,F2,"\r\
+SF:nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n>\r\nThis\x20service\x20al
+SF:lows\x20users\x20to\x20run\x20queries\x20against\x20databases\x20using\
+SF:x20the\x20legacy\x20HQK\x20format\r\n\r\n---\x20AVAILABLE\x20COMMANDS\x
+SF:20---\r\n\r\nLIST\r\nSETDIR\x20<Directory_Name>\r\nRUNQUERY\x20<Query_I
+SF:D>\r\nDEBUG\x20<Password>\r\nHELP\x20<Command>\r\n>")%r(SSLSessionReq,2
+SF:1,"\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n>")%r(TerminalServer
+SF:Cookie,21,"\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n>")%r(TLSSes
+SF:sionReq,21,"\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n>")%r(Kerbe
+SF:ros,21,"\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n>")%r(SMBProgNe
+SF:g,21,"\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n>")%r(X11Probe,21
+SF:,"\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n>")%r(FourOhFourReque
+SF:st,3A,"\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n>\r\nUnrecognise
+SF:d\x20command\r\n>")%r(LPDString,21,"\r\nHQK\x20Reporting\x20Service\x20
+SF:V1\.2\r\n\r\n>")%r(LDAPSearchReq,21,"\r\nHQK\x20Reporting\x20Service\x2
+SF:0V1\.2\r\n\r\n>")%r(LDAPBindReq,21,"\r\nHQK\x20Reporting\x20Service\x20
+SF:V1\.2\r\n\r\n>")%r(SIPOptions,3A,"\r\nHQK\x20Reporting\x20Service\x20V1
+SF:\.2\r\n\r\n>\r\nUnrecognised\x20command\r\n>")%r(LANDesk-RC,21,"\r\nHQK
+SF:\x20Reporting\x20Service\x20V1\.2\r\n\r\n>")%r(TerminalServer,21,"\r\nH
+SF:QK\x20Reporting\x20Service\x20V1\.2\r\n\r\n>");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|phone|specialized
+Running (JUST GUESSING): Microsoft Windows 8|Phone|2008|7|8.1|Vista|2012 (92%)
+OS CPE: cpe:/o:microsoft:windows_8 cpe:/o:microsoft:windows cpe:/o:microsoft:windows_server_2008:r2 cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows_8.1 cpe:/o:microsoft:windows_vista::- cpe:/o:microsoft:windows_vista::sp1 cpe:/o:microsoft:windows_server_2012
+Aggressive OS guesses: Microsoft Windows 8.1 Update 1 (92%), Microsoft Windows Phone 7.5 or 8.0 (92%), Microsoft Windows 7 or Windows Server 2008 R2 (91%), Microsoft Windows Server 2008 R2 (91%), Microsoft Windows Server 2008 R2 or Windows 8.1 (91%), Microsoft Windows Server 2008 R2 SP1 or Windows 8 (91%), Microsoft Windows 7 (91%), Microsoft Windows 7 Professional or Windows 8 (91%), Microsoft Windows 7 SP1 or Windows Server 2008 R2 (91%), Microsoft Windows 7 SP1 or Windows Server 2008 SP2 or 2008 R2 SP1 (91%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 1.298 days (since Fri Feb 21 13:27:16 2020)
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: Incremental
+
+Host script results:
+|_samba-vuln-cve-2012-1182: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+
+NSE: Script Post-scanning.
+Initiating NSE at 20:36
+Completed NSE at 20:36, 0.00s elapsed
+Initiating NSE at 20:36
+Completed NSE at 20:36, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 487.84 seconds
+           Raw packets sent: 262646 (11.564MB) | Rcvd: 203 (9.624KB)
+

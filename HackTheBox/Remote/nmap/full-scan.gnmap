@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Wed Sep  2 21:49:18 2020 as: nmap -sC -p- -oA nmap/full-scan -v 10.10.10.180
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.180 ()	Status: Up
+Host: 10.10.10.180 ()	Ports: 21/open/tcp//ftp///, 80/open/tcp//http///, 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 2049/open/tcp//mountd//1-3 (RPC #100005)/, 5985/open/tcp//wsman///, 47001/open/tcp//winrm///, 49664/open/tcp/////, 49665/open/tcp/////, 49666/open/tcp/////, 49667/open/tcp/////, 49678/open/tcp//unknown///, 49679/open/tcp/////, 49680/open/tcp/////	Ignored State: closed (65519)
+# Nmap done at Wed Sep  2 22:17:37 2020 -- 1 IP address (1 host up) scanned in 1699.15 seconds

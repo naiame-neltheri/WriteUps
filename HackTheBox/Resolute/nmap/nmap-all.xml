@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sat Apr 18 18:50:18 2020 as: nmap -v -sS -sV -Pn -p- -oA nmap/nmap-all 10.10.10.169 -->
+<nmaprun scanner="nmap" args="nmap -v -sS -sV -Pn -p- -oA nmap/nmap-all 10.10.10.169" start="1587207018" startstr="Sat Apr 18 18:50:18 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1587207018"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1587207018"/>
+<taskbegin task="SYN Stealth Scan" time="1587207018"/>
+<taskprogress task="SYN Stealth Scan" time="1587207049" percent="5.56" remaining="527" etc="1587207576"/>
+<taskprogress task="SYN Stealth Scan" time="1587207079" percent="6.90" remaining="823" etc="1587207901"/>
+<taskprogress task="SYN Stealth Scan" time="1587207109" percent="8.10" remaining="1033" etc="1587208141"/>
+<taskprogress task="SYN Stealth Scan" time="1587207139" percent="9.25" remaining="1188" etc="1587208327"/>
+<taskprogress task="SYN Stealth Scan" time="1587207172" percent="12.36" remaining="1092" etc="1587208264"/>
+<taskprogress task="SYN Stealth Scan" time="1587207202" percent="16.18" remaining="953" etc="1587208155"/>
+<taskprogress task="SYN Stealth Scan" time="1587207232" percent="20.25" remaining="843" etc="1587208075"/>
+<taskprogress task="SYN Stealth Scan" time="1587207262" percent="23.85" remaining="779" etc="1587208041"/>
+<taskprogress task="SYN Stealth Scan" time="1587207292" percent="27.69" remaining="716" etc="1587208007"/>
+<taskprogress task="SYN Stealth Scan" time="1587207322" percent="31.55" remaining="660" etc="1587207982"/>
+<taskprogress task="SYN Stealth Scan" time="1587207355" percent="35.75" remaining="606" etc="1587207961"/>
+<taskprogress task="SYN Stealth Scan" time="1587207391" percent="40.04" remaining="559" etc="1587207950"/>
+<taskprogress task="SYN Stealth Scan" time="1587207427" percent="44.42" remaining="512" etc="1587207939"/>
+<taskprogress task="SYN Stealth Scan" time="1587207475" percent="49.94" remaining="459" etc="1587207933"/>
+<taskprogress task="SYN Stealth Scan" time="1587207529" percent="55.41" remaining="412" etc="1587207940"/>
+<taskprogress task="SYN Stealth Scan" time="1587207574" percent="60.45" remaining="364" etc="1587207938"/>
+<taskprogress task="SYN Stealth Scan" time="1587207619" percent="65.45" remaining="318" etc="1587207936"/>
+<taskprogress task="SYN Stealth Scan" time="1587207652" percent="70.22" remaining="269" etc="1587207921"/>
+<taskprogress task="SYN Stealth Scan" time="1587207691" percent="75.04" remaining="224" etc="1587207915"/>
+<taskprogress task="SYN Stealth Scan" time="1587207742" percent="80.18" remaining="179" etc="1587207921"/>
+<taskprogress task="SYN Stealth Scan" time="1587207793" percent="85.31" remaining="134" etc="1587207926"/>
+<taskprogress task="SYN Stealth Scan" time="1587207841" percent="90.41" remaining="88" etc="1587207928"/>
+<taskprogress task="SYN Stealth Scan" time="1587207892" percent="95.68" remaining="40" etc="1587207931"/>
+<taskend task="SYN Stealth Scan" time="1587207944" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1587207944"/>
+<taskend task="Service scan" time="1587208002" extrainfo="23 services on 1 host"/>
+<taskbegin task="NSE" time="1587208002"/>
+<taskend task="NSE" time="1587208003"/>
+<taskbegin task="NSE" time="1587208003"/>
+<taskend task="NSE" time="1587208004"/>
+<host starttime="1587207018" endtime="1587208004"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.169" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65512">
+<extrareasons reason="resets" count="65512"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="domain" servicefp="SF-Port53-TCP:V=7.80%I=7%D=4/18%Time=5E9ADF13%P=x86_64-unknown-linux-gnu%r(DNSVersionBindReqTCP,20,&quot;\0\x1e\0\x06\x81\x04\0\x01\0\0\0\0\0\0\x07version\x04bind\0\0\x10\0\x03&quot;);" method="table" conf="3"/></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2020-04-18 11:12:22Z" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:kerberos</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: megabank.local, Site: Default-First-Site-Name" hostname="RESOLUTE" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" product="Microsoft Windows Server 2008 R2 - 2012 microsoft-ds" extrainfo="workgroup: MEGABANK" hostname="RESOLUTE" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="464"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="tcp" portid="593"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="636"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3268"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: megabank.local, Site: Default-First-Site-Name" hostname="RESOLUTE" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="3269"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="9389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="mc-nmf" product=".NET Message Framing" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="47001"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49665"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49670"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49676"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49677"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49688"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49714"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<times srtt="189414" rttvar="3816" to="204678"/>
+</host>
+<runstats><finished time="1587208004" timestr="Sat Apr 18 19:06:44 2020" elapsed="986.37" summary="Nmap done at Sat Apr 18 19:06:44 2020; 1 IP address (1 host up) scanned in 986.37 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

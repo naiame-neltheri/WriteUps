@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Sun Apr 12 15:44:46 2020 as: nmap -v -Pn -p- -sC -sV -oA nmap/all 10.10.10.162
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.162 (staging-order.mango.htb)	Status: Up
+Host: 10.10.10.162 (staging-order.mango.htb)	Ports: 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/, 443/open/tcp//ssl|http//Apache httpd 2.4.29 ((Ubuntu))/	Ignored State: closed (65532)
+# Nmap done at Sun Apr 12 16:07:14 2020 -- 1 IP address (1 host up) scanned in 1347.79 seconds

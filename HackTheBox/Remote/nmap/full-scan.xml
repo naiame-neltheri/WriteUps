@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Sep  2 21:49:18 2020 as: nmap -sC -p- -oA nmap/full-scan -v 10.10.10.180 -->
+<nmaprun scanner="nmap" args="nmap -sC -p- -oA nmap/full-scan -v 10.10.10.180" start="1599054558" startstr="Wed Sep  2 21:49:18 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1599054558"/>
+<taskend task="NSE" time="1599054558"/>
+<taskbegin task="NSE" time="1599054558"/>
+<taskend task="NSE" time="1599054558"/>
+<taskbegin task="Ping Scan" time="1599054559"/>
+<taskend task="Ping Scan" time="1599054559" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1599054559"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1599054559"/>
+<taskbegin task="SYN Stealth Scan" time="1599054559"/>
+<taskprogress task="SYN Stealth Scan" time="1599054590" percent="4.70" remaining="629" etc="1599055219"/>
+<taskprogress task="SYN Stealth Scan" time="1599054620" percent="5.93" remaining="967" etc="1599055587"/>
+<taskprogress task="SYN Stealth Scan" time="1599054650" percent="6.97" remaining="1215" etc="1599055865"/>
+<taskprogress task="SYN Stealth Scan" time="1599054680" percent="8.44" remaining="1313" etc="1599055993"/>
+<taskprogress task="SYN Stealth Scan" time="1599054731" percent="12.31" remaining="1226" etc="1599055957"/>
+<taskprogress task="SYN Stealth Scan" time="1599054809" percent="17.90" remaining="1147" etc="1599055956"/>
+<taskprogress task="SYN Stealth Scan" time="1599054854" percent="21.50" remaining="1077" etc="1599055931"/>
+<taskprogress task="SYN Stealth Scan" time="1599054920" percent="26.39" remaining="1007" etc="1599055927"/>
+<taskprogress task="SYN Stealth Scan" time="1599054980" percent="31.02" remaining="937" etc="1599055916"/>
+<taskprogress task="SYN Stealth Scan" time="1599055040" percent="35.70" remaining="867" etc="1599055907"/>
+<taskprogress task="SYN Stealth Scan" time="1599055121" percent="41.38" remaining="797" etc="1599055917"/>
+<taskprogress task="SYN Stealth Scan" time="1599055190" percent="46.57" remaining="725" etc="1599055914"/>
+<taskprogress task="SYN Stealth Scan" time="1599055253" percent="51.44" remaining="656" etc="1599055908"/>
+<taskprogress task="SYN Stealth Scan" time="1599055388" percent="58.53" remaining="588" etc="1599055975"/>
+<taskprogress task="SYN Stealth Scan" time="1599055502" percent="64.65" remaining="516" etc="1599056018"/>
+<taskprogress task="SYN Stealth Scan" time="1599055598" percent="70.18" remaining="442" etc="1599056039"/>
+<taskprogress task="SYN Stealth Scan" time="1599055694" percent="75.67" remaining="365" etc="1599056059"/>
+<taskprogress task="SYN Stealth Scan" time="1599055787" percent="80.98" remaining="289" etc="1599056075"/>
+<taskprogress task="SYN Stealth Scan" time="1599055880" percent="86.26" remaining="211" etc="1599056090"/>
+<taskprogress task="SYN Stealth Scan" time="1599055976" percent="91.53" remaining="132" etc="1599056107"/>
+<taskprogress task="SYN Stealth Scan" time="1599056048" percent="96.54" remaining="54" etc="1599056101"/>
+<taskend task="SYN Stealth Scan" time="1599056131" extrainfo="65535 total ports"/>
+<taskbegin task="NSE" time="1599056131"/>
+<taskend task="NSE" time="1599056257"/>
+<taskbegin task="NSE" time="1599056257"/>
+<taskend task="NSE" time="1599056257"/>
+<host starttime="1599054559" endtime="1599056257"><status state="up" reason="reset" reason_ttl="127"/>
+<address addr="10.10.10.180" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65519">
+<extrareasons reason="resets" count="65519"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ftp" method="table" conf="3"/><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)"/><script id="ftp-syst" output="&#xa;  SYST: Windows_NT"><elem key="SYST">Windows_NT</elem>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" method="table" conf="3"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Home - Acme Widgets"><elem key="title">Home - Acme Widgets</elem>
+</script></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="rpcbind" version="2-4" extrainfo="RPC #100000" method="probed" conf="10"/><script id="rpcinfo" output="&#xa;  program version    port/proto  service&#xa;  100000  2,3,4        111/tcp   rpcbind&#xa;  100000  2,3,4        111/tcp6  rpcbind&#xa;  100000  2,3,4        111/udp   rpcbind&#xa;  100000  2,3,4        111/udp6  rpcbind&#xa;  100003  2,3         2049/udp   nfs&#xa;  100003  2,3         2049/udp6  nfs&#xa;  100003  2,3,4       2049/tcp   nfs&#xa;  100003  2,3,4       2049/tcp6  nfs&#xa;  100005  1,2,3       2049/tcp   mountd&#xa;  100005  1,2,3       2049/tcp6  mountd&#xa;  100005  1,2,3       2049/udp   mountd&#xa;  100005  1,2,3       2049/udp6  mountd&#xa;  100021  1,2,3,4     2049/tcp   nlockmgr&#xa;  100021  1,2,3,4     2049/tcp6  nlockmgr&#xa;  100021  1,2,3,4     2049/udp   nlockmgr&#xa;  100021  1,2,3,4     2049/udp6  nlockmgr&#xa;  100024  1           2049/tcp   status&#xa;  100024  1           2049/tcp6  status&#xa;  100024  1           2049/udp   status&#xa;  100024  1           2049/udp6  status&#xa;"><table key="100005">
+<table key="udp">
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="port">2049</elem>
+</table>
+<table key="tcp">
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="port">2049</elem>
+</table>
+<table key="udp6">
+<elem key="addr">::</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="port">2049</elem>
+</table>
+<table key="tcp6">
+<elem key="addr">::</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="port">2049</elem>
+</table>
+</table>
+<table key="100000">
+<table key="udp">
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="port">111</elem>
+</table>
+<table key="udp6">
+<elem key="addr">::</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="port">111</elem>
+</table>
+<table key="tcp6">
+<elem key="addr">::</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="port">111</elem>
+</table>
+<table key="tcp">
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="port">111</elem>
+</table>
+</table>
+<table key="100024">
+<table key="udp">
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="port">2049</elem>
+</table>
+<table key="tcp">
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="port">2049</elem>
+</table>
+<table key="udp6">
+<elem key="addr">::</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="port">2049</elem>
+</table>
+<table key="tcp6">
+<elem key="addr">::</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="port">2049</elem>
+</table>
+</table>
+<table key="100021">
+<table key="udp">
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="port">2049</elem>
+</table>
+<table key="tcp">
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="port">2049</elem>
+</table>
+<table key="udp6">
+<elem key="addr">::</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="port">2049</elem>
+</table>
+<table key="tcp6">
+<elem key="addr">::</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="port">2049</elem>
+</table>
+</table>
+<table key="100003">
+<table key="udp">
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="port">2049</elem>
+</table>
+<table key="tcp">
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="port">2049</elem>
+</table>
+<table key="udp6">
+<elem key="addr">::</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="port">2049</elem>
+</table>
+<table key="tcp6">
+<elem key="addr">::</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="port">2049</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2049"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="mountd" version="1-3" extrainfo="RPC #100005" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="wsman" method="table" conf="3"/></port>
+<port protocol="tcp" portid="47001"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="winrm" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49665"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49678"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49679"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49680"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+</ports>
+<hostscript><script id="clock-skew" output="-18s"><elem key="median">-18</elem>
+<elem key="count">1</elem>
+<elem key="mean">-18</elem>
+<elem key="stddev">0</elem>
+</script><script id="smb2-security-mode" output="&#xa;  2.02: &#xa;    Message signing enabled but not required"><table key="2.02">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2020-09-02T14:15:16&#xa;  start_date: N/A"><elem key="date">2020-09-02T14:15:16</elem>
+<elem key="start_date">N/A</elem>
+</script></hostscript><times srtt="194042" rttvar="962" to="197890"/>
+</host>
+<taskbegin task="NSE" time="1599056257"/>
+<taskend task="NSE" time="1599056257"/>
+<taskbegin task="NSE" time="1599056257"/>
+<taskend task="NSE" time="1599056257"/>
+<runstats><finished time="1599056257" timestr="Wed Sep  2 22:17:37 2020" elapsed="1699.15" summary="Nmap done at Wed Sep  2 22:17:37 2020; 1 IP address (1 host up) scanned in 1699.15 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

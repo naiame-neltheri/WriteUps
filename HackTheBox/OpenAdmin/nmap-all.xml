@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue Mar 31 19:45:51 2020 as: nmap -v -sS -sV -Pn -T3 -p- -oA nmap-all 10.10.10.171 -->
+<nmaprun scanner="nmap" args="nmap -v -sS -sV -Pn -T3 -p- -oA nmap-all 10.10.10.171" start="1585655151" startstr="Tue Mar 31 19:45:51 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1585655151"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1585655152"/>
+<taskbegin task="SYN Stealth Scan" time="1585655152"/>
+<taskprogress task="SYN Stealth Scan" time="1585655183" percent="4.36" remaining="681" etc="1585655864"/>
+<taskprogress task="SYN Stealth Scan" time="1585655213" percent="5.36" remaining="1077" etc="1585656290"/>
+<taskprogress task="SYN Stealth Scan" time="1585655243" percent="6.06" remaining="1410" etc="1585656653"/>
+<taskprogress task="SYN Stealth Scan" time="1585655273" percent="7.02" remaining="1602" etc="1585656875"/>
+<taskprogress task="SYN Stealth Scan" time="1585655354" percent="11.78" remaining="1513" etc="1585656867"/>
+<taskprogress task="SYN Stealth Scan" time="1585655384" percent="14.14" remaining="1410" etc="1585656793"/>
+<taskprogress task="SYN Stealth Scan" time="1585655420" percent="16.82" remaining="1326" etc="1585656746"/>
+<taskprogress task="SYN Stealth Scan" time="1585655474" percent="20.54" remaining="1246" etc="1585656719"/>
+<taskprogress task="SYN Stealth Scan" time="1585655675" percent="28.28" remaining="1327" etc="1585657001"/>
+<taskprogress task="SYN Stealth Scan" time="1585655780" percent="33.77" remaining="1232" etc="1585657012"/>
+<taskprogress task="SYN Stealth Scan" time="1585655840" percent="37.70" remaining="1137" etc="1585656977"/>
+<taskprogress task="SYN Stealth Scan" time="1585656410" percent="54.65" remaining="1044" etc="1585657454"/>
+<taskprogress task="SYN Stealth Scan" time="1585656575" percent="60.55" remaining="927" etc="1585657502"/>
+<taskprogress task="SYN Stealth Scan" time="1585656731" percent="66.15" remaining="809" etc="1585657539"/>
+<taskprogress task="SYN Stealth Scan" time="1585656881" percent="71.52" remaining="689" etc="1585657569"/>
+<taskprogress task="SYN Stealth Scan" time="1585657031" percent="76.84" remaining="567" etc="1585657597"/>
+<taskprogress task="SYN Stealth Scan" time="1585657178" percent="82.10" remaining="442" etc="1585657620"/>
+<taskprogress task="SYN Stealth Scan" time="1585657322" percent="87.21" remaining="319" etc="1585657640"/>
+<taskprogress task="SYN Stealth Scan" time="1585657466" percent="92.31" remaining="193" etc="1585657659"/>
+<taskprogress task="SYN Stealth Scan" time="1585657607" percent="97.40" remaining="66" etc="1585657672"/>
+<taskend task="SYN Stealth Scan" time="1585657748" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1585657748"/>
+<taskend task="Service scan" time="1585657756" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1585657756"/>
+<taskend task="NSE" time="1585657758"/>
+<taskbegin task="NSE" time="1585657758"/>
+<taskend task="NSE" time="1585657759"/>
+<host starttime="1585655152" endtime="1585657759"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.171" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65517">
+<extrareasons reason="resets" count="65517"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4ubuntu0.3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.29" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service></port>
+<port protocol="tcp" portid="1308"><state state="filtered" reason="host-unreach" reason_ttl="64" reason_ip="10.10.14.1"/><service name="odsi" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1682"><state state="filtered" reason="host-unreach" reason_ttl="64" reason_ip="10.10.14.1"/><service name="lanyon-lantern" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7359"><state state="filtered" reason="host-unreach" reason_ttl="64" reason_ip="10.10.14.1"/><service name="swx" method="table" conf="3"/></port>
+<port protocol="tcp" portid="18831"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="22512"><state state="filtered" reason="host-unreach" reason_ttl="64" reason_ip="10.10.14.1"/></port>
+<port protocol="tcp" portid="22623"><state state="filtered" reason="host-unreach" reason_ttl="64" reason_ip="10.10.14.1"/></port>
+<port protocol="tcp" portid="23111"><state state="filtered" reason="host-unreach" reason_ttl="64" reason_ip="10.10.14.1"/></port>
+<port protocol="tcp" portid="24391"><state state="filtered" reason="host-unreach" reason_ttl="64" reason_ip="10.10.14.1"/></port>
+<port protocol="tcp" portid="33004"><state state="filtered" reason="host-unreach" reason_ttl="64" reason_ip="10.10.14.1"/></port>
+<port protocol="tcp" portid="34330"><state state="filtered" reason="host-unreach" reason_ttl="64" reason_ip="10.10.14.1"/></port>
+<port protocol="tcp" portid="35463"><state state="filtered" reason="host-unreach" reason_ttl="64" reason_ip="10.10.14.1"/></port>
+<port protocol="tcp" portid="35467"><state state="filtered" reason="host-unreach" reason_ttl="64" reason_ip="10.10.14.1"/></port>
+<port protocol="tcp" portid="41970"><state state="filtered" reason="host-unreach" reason_ttl="64" reason_ip="10.10.14.1"/></port>
+<port protocol="tcp" portid="45816"><state state="filtered" reason="host-unreach" reason_ttl="64" reason_ip="10.10.14.1"/></port>
+<port protocol="tcp" portid="57721"><state state="filtered" reason="host-unreach" reason_ttl="64" reason_ip="10.10.14.1"/></port>
+<port protocol="tcp" portid="61308"><state state="filtered" reason="host-unreach" reason_ttl="64" reason_ip="10.10.14.1"/></port>
+</ports>
+<times srtt="143785" rttvar="5181" to="164509"/>
+</host>
+<runstats><finished time="1585657759" timestr="Tue Mar 31 20:29:19 2020" elapsed="2608.10" summary="Nmap done at Tue Mar 31 20:29:19 2020; 1 IP address (1 host up) scanned in 2608.10 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

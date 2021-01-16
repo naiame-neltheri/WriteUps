@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Mar 29 18:07:32 2020 as: nmap -v -Pn -p- -sS -sV -T5 -&#45;script=vuln -oA nmap-all 10.10.10.159 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -sS -sV -T5 -&#45;script=vuln -oA nmap-all 10.10.10.159" start="1585476452" startstr="Sun Mar 29 18:07:32 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1585476452"/>
+<taskend task="NSE" time="1585476462"/>
+<taskbegin task="NSE" time="1585476462"/>
+<taskend task="NSE" time="1585476462"/>
+<taskbegin task="SYN Stealth Scan" time="1585476462"/>
+<taskprogress task="SYN Stealth Scan" time="1585476493" percent="7.54" remaining="380" etc="1585476873"/>
+<taskprogress task="SYN Stealth Scan" time="1585476523" percent="12.75" remaining="418" etc="1585476941"/>
+<taskprogress task="SYN Stealth Scan" time="1585476553" percent="19.30" remaining="381" etc="1585476933"/>
+<taskprogress task="SYN Stealth Scan" time="1585476592" percent="26.91" remaining="354" etc="1585476945"/>
+<taskprogress task="SYN Stealth Scan" time="1585476631" percent="34.07" remaining="327" etc="1585476958"/>
+<taskprogress task="SYN Stealth Scan" time="1585476661" percent="39.89" remaining="300" etc="1585476961"/>
+<taskprogress task="SYN Stealth Scan" time="1585476706" percent="47.27" remaining="273" etc="1585476978"/>
+<taskprogress task="SYN Stealth Scan" time="1585476742" percent="53.36" remaining="245" etc="1585476987"/>
+<taskprogress task="SYN Stealth Scan" time="1585476772" percent="59.02" remaining="216" etc="1585476987"/>
+<taskprogress task="SYN Stealth Scan" time="1585476808" percent="64.98" remaining="187" etc="1585476994"/>
+<taskprogress task="SYN Stealth Scan" time="1585476836" percent="70.02" remaining="161" etc="1585476996"/>
+<taskprogress task="SYN Stealth Scan" time="1585476866" percent="75.50" remaining="132" etc="1585476997"/>
+<taskprogress task="SYN Stealth Scan" time="1585476896" percent="81.26" remaining="101" etc="1585476996"/>
+<taskprogress task="SYN Stealth Scan" time="1585476929" percent="86.84" remaining="71" etc="1585477000"/>
+<taskprogress task="SYN Stealth Scan" time="1585476959" percent="92.44" remaining="41" etc="1585477000"/>
+<taskend task="SYN Stealth Scan" time="1585477014" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1585477014"/>
+<taskend task="Service scan" time="1585477027" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1585477027"/>
+<taskprogress task="NSE" time="1585477128" percent="99.51" remaining="1" etc="1585477129"/>
+<taskprogress task="NSE" time="1585477301" percent="99.51" remaining="2" etc="1585477302"/>
+<taskend task="NSE" time="1585477362"/>
+<taskbegin task="NSE" time="1585477362"/>
+<taskend task="NSE" time="1585477363"/>
+<host starttime="1585476462" endtime="1585477362"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.159" addrtype="ipv4"/>
+<hostnames>
+<hostname name="docker.registry.htb" type="PTR"/>
+</hostnames>
+</host>
+<taskbegin task="NSE" time="1585477363"/>
+<taskend task="NSE" time="1585477363"/>
+<taskbegin task="NSE" time="1585477363"/>
+<taskend task="NSE" time="1585477363"/>
+<runstats><finished time="1585477363" timestr="Sun Mar 29 18:22:43 2020" elapsed="910.87" summary="Nmap done at Sun Mar 29 18:22:43 2020; 1 IP address (1 host up) scanned in 910.87 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

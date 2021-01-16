@@ -3,7 +3,7 @@ import time
 import hashlib, binascii
 
 BASE_URL = "https://ringzer0ctf.com/challenges/14"
-SESS_ID = "nlqji6vu9gik51op373jbt7ob0"
+SESS_ID = "lo7a8a9q2h5d0hbnosgv0643b2"
 
 def generate_data():
 	r = requests.get(BASE_URL, cookies = {"PHPSESSID" : SESS_ID})
@@ -41,6 +41,8 @@ def convert2ascii(content):
 	tmp = [(content[i:i+n]) for i in range(0, len(content), n)]
 	for item in tmp:
 		res += chr(int(item, 2))
+	print("[+] BINARY : {}".format(content))
+	print("[+] CONVERTED : {}".format(res))
 	return res
 
 def engine():

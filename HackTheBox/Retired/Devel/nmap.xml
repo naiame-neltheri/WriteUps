@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Feb 26 17:15:46 2020 as: nmap -Pn -p- -sS -sV -f -T5 -O -&#45;script=vuln -v -oX nmap.xml 10.10.10.5 -->
+<nmaprun scanner="nmap" args="nmap -Pn -p- -sS -sV -f -T5 -O -&#45;script=vuln -v -oX nmap.xml 10.10.10.5" start="1582708546" startstr="Wed Feb 26 17:15:46 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1582708547"/>
+<taskprogress task="NSE" time="1582708551" percent="0.00"/>
+<taskend task="NSE" time="1582708557"/>
+<taskbegin task="NSE" time="1582708557"/>
+<taskend task="NSE" time="1582708557"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1582708557"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1582708557"/>
+<taskbegin task="SYN Stealth Scan" time="1582708557"/>
+<taskprogress task="SYN Stealth Scan" time="1582708588" percent="8.67" remaining="327" etc="1582708914"/>
+<taskprogress task="SYN Stealth Scan" time="1582708618" percent="21.95" remaining="217" etc="1582708835"/>
+<taskprogress task="SYN Stealth Scan" time="1582708648" percent="39.01" remaining="143" etc="1582708790"/>
+<taskprogress task="SYN Stealth Scan" time="1582708678" percent="54.38" remaining="102" etc="1582708779"/>
+<taskprogress task="SYN Stealth Scan" time="1582708708" percent="66.71" remaining="76" etc="1582708783"/>
+<taskprogress task="SYN Stealth Scan" time="1582708738" percent="79.29" remaining="48" etc="1582708785"/>
+<taskend task="SYN Stealth Scan" time="1582708813" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1582708813"/>
+<taskend task="Service scan" time="1582708820" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1582708824"/>
+<taskend task="NSE" time="1582709211"/>
+<taskbegin task="NSE" time="1582709211"/>
+<taskend task="NSE" time="1582709213"/>
+<host starttime="1582708557" endtime="1582709213"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.5" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ftp" product="Microsoft ftpd" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:ftp_service</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="sslv2-drown" output="&#xa;"></script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft IIS httpd" version="7.5" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:iis:7.5</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<osmatch name="Microsoft Windows 8.1 Update 1" accuracy="92" line="77581">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="92"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Phone 7.5 or 8.0" accuracy="92" line="78869">
+<osclass type="phone" vendor="Microsoft" osfamily="Windows" osgen="Phone" accuracy="92"><cpe>cpe:/o:microsoft:windows</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 or Windows Server 2008 R2" accuracy="91" line="73917">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="91"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2" accuracy="91" line="74136">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2 or Windows 8.1" accuracy="91" line="74462">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8.1" accuracy="91"><cpe>cpe:/o:microsoft:windows_8.1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2 SP1 or Windows 8" accuracy="91" line="74646">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2008:r2:sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="91"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7" accuracy="91" line="75992">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="91"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 Professional or Windows 8" accuracy="91" line="76543">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="91"><cpe>cpe:/o:microsoft:windows_7::-:professional</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="91"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 SP1 or Windows Server 2008 R2" accuracy="91" line="77209">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="91"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 SP1 or Windows Server 2008 SP2 or 2008 R2 SP1" accuracy="91" line="77277">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="91"><cpe>cpe:/o:microsoft:windows_7::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2008::sp2</cpe><cpe>cpe:/o:microsoft:windows_server_2008:r2:sp1</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="2280" lastboot="Wed Feb 26 16:48:53 2020"/>
+<tcpsequence index="262" difficulty="Good luck!" values="B0259B1F,B2F5779B,4D8E439B,8AC0BB2,AD13D54F,433FFBA7"/>
+<ipidsequence class="Incremental" values="1E56,1E57,1E58,1E59,1E5A,1E5B"/>
+<tcptssequence class="100HZ" values="2E21A,2E224,2E22E,2E238,2E242,2E24C"/>
+<times srtt="195723" rttvar="1664" to="202379"/>
+</host>
+<taskbegin task="NSE" time="1582709213"/>
+<taskend task="NSE" time="1582709213"/>
+<taskbegin task="NSE" time="1582709213"/>
+<taskend task="NSE" time="1582709213"/>
+<runstats><finished time="1582709213" timestr="Wed Feb 26 17:26:53 2020" elapsed="667.20" summary="Nmap done at Wed Feb 26 17:26:53 2020; 1 IP address (1 host up) scanned in 667.20 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

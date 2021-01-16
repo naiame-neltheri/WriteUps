@@ -1,0 +1,1 @@
+# Nmap 7.91 scan initiated Mon Nov 16 23:23:36 2020 as: nmap -v -sS -sV -Pn -p- -T2 -oA nmap/allport 10.10.10.198

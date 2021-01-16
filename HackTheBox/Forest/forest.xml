@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Feb 12 20:36:59 2020 as: nmap -v -A -T5 -O -Pn -p- -oX /home/naiame/Documents/WriteUps/HackTheBox/forest.xml 10.10.10.161 -->
+<nmaprun scanner="nmap" args="nmap -v -A -T5 -O -Pn -p- -oX /home/naiame/Documents/WriteUps/HackTheBox/forest.xml 10.10.10.161" start="1581511019" startstr="Wed Feb 12 20:36:59 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1581511019"/>
+<taskend task="NSE" time="1581511019"/>
+<taskbegin task="NSE" time="1581511019"/>
+<taskend task="NSE" time="1581511019"/>
+<taskbegin task="NSE" time="1581511019"/>
+<taskend task="NSE" time="1581511019"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1581511019"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1581511019"/>
+<taskbegin task="SYN Stealth Scan" time="1581511019"/>
+<taskprogress task="SYN Stealth Scan" time="1581511050" percent="35.18" remaining="58" etc="1581511107"/>
+<taskprogress task="SYN Stealth Scan" time="1581511095" percent="51.12" remaining="73" etc="1581511168"/>
+<taskprogress task="SYN Stealth Scan" time="1581511125" percent="51.45" remaining="101" etc="1581511225"/>
+<taskprogress task="SYN Stealth Scan" time="1581511155" percent="51.79" remaining="127" etc="1581511282"/>
+<taskprogress task="SYN Stealth Scan" time="1581511185" percent="52.12" remaining="153" etc="1581511337"/>
+<taskprogress task="SYN Stealth Scan" time="1581511215" percent="52.45" remaining="178" etc="1581511393"/>
+<taskprogress task="SYN Stealth Scan" time="1581511245" percent="52.79" remaining="203" etc="1581511447"/>
+<taskprogress task="SYN Stealth Scan" time="1581511275" percent="53.12" remaining="226" etc="1581511501"/>
+<taskprogress task="SYN Stealth Scan" time="1581511308" percent="53.49" remaining="252" etc="1581511559"/>
+<taskprogress task="SYN Stealth Scan" time="1581511344" percent="53.89" remaining="279" etc="1581511622"/>
+<taskprogress task="SYN Stealth Scan" time="1581511386" percent="54.35" remaining="309" etc="1581511694"/>
+<taskprogress task="SYN Stealth Scan" time="1581511437" percent="54.92" remaining="344" etc="1581511780"/>
+<taskprogress task="SYN Stealth Scan" time="1581511497" percent="55.59" remaining="382" etc="1581511879"/>
+<taskprogress task="SYN Stealth Scan" time="1581511569" percent="56.39" remaining="426" etc="1581511994"/>
+<taskprogress task="SYN Stealth Scan" time="1581511659" percent="57.39" remaining="476" etc="1581512134"/>
+<taskprogress task="SYN Stealth Scan" time="1581511773" percent="58.66" remaining="532" etc="1581512304"/>
+<taskend task="SYN Stealth Scan" time="1581511919" extrainfo="1 host timed out"/>
+<taskbegin task="Service scan" time="1581511919"/>
+<taskbegin task="Traceroute" time="1581511919"/>
+<taskend task="Traceroute" time="1581511928"/>
+<taskbegin task="NSE" time="1581511929"/>
+<taskend task="NSE" time="1581511929"/>
+<taskbegin task="NSE" time="1581511929"/>
+<taskend task="NSE" time="1581511929"/>
+<taskbegin task="NSE" time="1581511929"/>
+<taskend task="NSE" time="1581511929"/>
+<host starttime="1581511019" endtime="1581511919"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.161" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</host>
+<taskbegin task="NSE" time="1581511929"/>
+<taskend task="NSE" time="1581511929"/>
+<taskbegin task="NSE" time="1581511929"/>
+<taskend task="NSE" time="1581511929"/>
+<taskbegin task="NSE" time="1581511929"/>
+<taskend task="NSE" time="1581511929"/>
+<runstats><finished time="1581511929" timestr="Wed Feb 12 20:52:09 2020" elapsed="910.10" summary="Nmap done at Wed Feb 12 20:52:09 2020; 1 IP address (1 host up) scanned in 910.10 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

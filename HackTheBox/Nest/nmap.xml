@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sat Feb 22 20:36:45 2020 as: nmap -v -sS -sV -Pn -p- -f -D 10.10.14.1 -O -&#45;script=vuln -oX nmap.xml 10.10.10.178 -->
+<nmaprun scanner="nmap" args="nmap -v -sS -sV -Pn -p- -f -D 10.10.14.1 -O -&#45;script=vuln -oX nmap.xml 10.10.10.178" start="1582375005" startstr="Sat Feb 22 20:36:45 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1582375005"/>
+<taskprogress task="NSE" time="1582375036" percent="50.00" remaining="32" etc="1582375067"/>
+<taskend task="NSE" time="1582375039"/>
+<taskbegin task="NSE" time="1582375039"/>
+<taskend task="NSE" time="1582375039"/>
+<prescript><script id="broadcast-avahi-dos" output="&#xa;  Discovered hosts:&#xa;    224.0.0.251&#xa;  After NULL UDP avahi packet DoS (CVE-2011-1002).&#xa;  Hosts are all up (not vulnerable).&#xa;"/></prescript><taskbegin task="Parallel DNS resolution of 1 host." time="1582375039"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1582375039"/>
+<taskbegin task="SYN Stealth Scan" time="1582375039"/>
+<taskprogress task="SYN Stealth Scan" time="1582375070" percent="6.96" remaining="415" etc="1582375484"/>
+<taskprogress task="SYN Stealth Scan" time="1582375090" percent="16.05" remaining="267" etc="1582375357"/>
+<taskprogress task="SYN Stealth Scan" time="1582375120" percent="30.62" remaining="184" etc="1582375304"/>
+<taskprogress task="SYN Stealth Scan" time="1582375150" percent="40.96" remaining="161" etc="1582375310"/>
+<taskprogress task="SYN Stealth Scan" time="1582375180" percent="53.45" remaining="123" etc="1582375303"/>
+<taskprogress task="SYN Stealth Scan" time="1582375210" percent="63.02" remaining="101" etc="1582375310"/>
+<taskprogress task="SYN Stealth Scan" time="1582375240" percent="74.24" remaining="70" etc="1582375310"/>
+<taskend task="SYN Stealth Scan" time="1582375298" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1582375298"/>
+<taskend task="Service scan" time="1582375459" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1582375464"/>
+<taskend task="NSE" time="1582375478"/>
+<taskbegin task="NSE" time="1582375478"/>
+<taskend task="NSE" time="1582375480"/>
+<host starttime="1582375039" endtime="1582375480"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.178" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" method="table" conf="3"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="4386"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="unknown" servicefp="SF-Port4386-TCP:V=7.80%I=7%D=2/22%Time=5E512188%P=x86_64-unknown-linux-gnu%r(NULL,21,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;&quot;)%r(GenericLines,3A,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;\r\nUnrecognised\x20command\r\n&gt;&quot;)%r(GetRequest,3A,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;\r\nUnrecognised\x20command\r\n&gt;&quot;)%r(HTTPOptions,3A,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;\r\nUnrecognised\x20command\r\n&gt;&quot;)%r(RTSPRequest,3A,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;\r\nUnrecognised\x20command\r\n&gt;&quot;)%r(RPCCheck,21,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;&quot;)%r(DNSVersionBindReqTCP,21,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;&quot;)%r(DNSStatusRequestTCP,21,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;&quot;)%r(Help,F2,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;\r\nThis\x20service\x20allows\x20users\x20to\x20run\x20queries\x20against\x20databases\x20using\x20the\x20legacy\x20HQK\x20format\r\n\r\n-&#45;&#45;\x20AVAILABLE\x20COMMANDS\x20-&#45;&#45;\r\n\r\nLIST\r\nSETDIR\x20&lt;Directory_Name&gt;\r\nRUNQUERY\x20&lt;Query_ID&gt;\r\nDEBUG\x20&lt;Password&gt;\r\nHELP\x20&lt;Command&gt;\r\n&gt;&quot;)%r(SSLSessionReq,21,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;&quot;)%r(TerminalServerCookie,21,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;&quot;)%r(TLSSessionReq,21,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;&quot;)%r(Kerberos,21,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;&quot;)%r(SMBProgNeg,21,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;&quot;)%r(X11Probe,21,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;&quot;)%r(FourOhFourRequest,3A,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;\r\nUnrecognised\x20command\r\n&gt;&quot;)%r(LPDString,21,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;&quot;)%r(LDAPSearchReq,21,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;&quot;)%r(LDAPBindReq,21,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;&quot;)%r(SIPOptions,3A,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;\r\nUnrecognised\x20command\r\n&gt;&quot;)%r(LANDesk-RC,21,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;&quot;)%r(TerminalServer,21,&quot;\r\nHQK\x20Reporting\x20Service\x20V1\.2\r\n\r\n&gt;&quot;);" method="table" conf="3"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, DNSVersionBindReqTCP, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, NULL, RPCCheck, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServer, TerminalServerCookie, X11Probe: &#xa;    Reporting Service V1.2&#xa;  FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, RTSPRequest, SIPOptions: &#xa;    Reporting Service V1.2&#xa;    Unrecognised command&#xa;  Help: &#xa;    Reporting Service V1.2&#xa;    This service allows users to run queries against databases using the legacy HQK format&#xa;    AVAILABLE COMMANDS -&#45;&#45;&#xa;    LIST&#xa;    SETDIR &lt;Directory_Name&gt;&#xa;    RUNQUERY &lt;Query_ID&gt;&#xa;    DEBUG &lt;Password&gt;&#xa;    HELP &lt;Command&gt;"><elem key="DNSStatusRequestTCP, DNSVersionBindReqTCP, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, NULL, RPCCheck, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServer, TerminalServerCookie, X11Probe">&#xa;    Reporting Service V1.2</elem>
+<elem key="FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, RTSPRequest, SIPOptions">&#xa;    Reporting Service V1.2&#xa;    Unrecognised command</elem>
+<elem key="Help">&#xa;    Reporting Service V1.2&#xa;    This service allows users to run queries against databases using the legacy HQK format&#xa;    AVAILABLE COMMANDS -&#45;&#45;&#xa;    LIST&#xa;    SETDIR &lt;Directory_Name&gt;&#xa;    RUNQUERY &lt;Query_ID&gt;&#xa;    DEBUG &lt;Password&gt;&#xa;    HELP &lt;Command&gt;</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="445"/>
+<osmatch name="Microsoft Windows 8.1 Update 1" accuracy="92" line="77581">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="92"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Phone 7.5 or 8.0" accuracy="92" line="78869">
+<osclass type="phone" vendor="Microsoft" osfamily="Windows" osgen="Phone" accuracy="92"><cpe>cpe:/o:microsoft:windows</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 or Windows Server 2008 R2" accuracy="91" line="73917">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="91"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2" accuracy="91" line="74136">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2 or Windows 8.1" accuracy="91" line="74462">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8.1" accuracy="91"><cpe>cpe:/o:microsoft:windows_8.1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2 SP1 or Windows 8" accuracy="91" line="74646">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2008:r2:sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="91"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7" accuracy="91" line="75992">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="91"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 Professional or Windows 8" accuracy="91" line="76543">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="91"><cpe>cpe:/o:microsoft:windows_7::-:professional</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="91"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 SP1 or Windows Server 2008 R2" accuracy="91" line="77209">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="91"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Vista SP0 or SP1, Windows Server 2008 SP1, or Windows 7" accuracy="91" line="79575">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="91"><cpe>cpe:/o:microsoft:windows_vista::-</cpe><cpe>cpe:/o:microsoft:windows_vista::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2008::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="91"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="112645" lastboot="Fri Feb 21 13:27:15 2020"/>
+<tcpsequence index="262" difficulty="Good luck!" values="C6178417,E8B369E5,70D319A0,686DDA0E,8593BC5B,AB43CE14"/>
+<ipidsequence class="Incremental" values="2099,209B,209C,209D,209E,209F"/>
+<tcptssequence class="100HZ" values="ABDB13,ABDB1D,ABDB27,ABDB31,ABDB3B,ABDB45"/>
+<hostscript><script id="samba-vuln-cve-2012-1182" output="Could not negotiate a connection:SMB: Failed to receive bytes: ERROR">false</script><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="Could not negotiate a connection:SMB: Failed to receive bytes: ERROR">false</script></hostscript><times srtt="188119" rttvar="966" to="191983"/>
+</host>
+<taskbegin task="NSE" time="1582375480"/>
+<taskend task="NSE" time="1582375480"/>
+<taskbegin task="NSE" time="1582375480"/>
+<taskend task="NSE" time="1582375480"/>
+<runstats><finished time="1582375480" timestr="Sat Feb 22 20:44:40 2020" elapsed="475.48" summary="Nmap done at Sat Feb 22 20:44:40 2020; 1 IP address (1 host up) scanned in 475.48 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

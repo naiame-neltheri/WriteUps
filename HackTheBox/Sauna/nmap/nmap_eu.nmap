@@ -1,0 +1,26 @@
+# Nmap 7.80 scan initiated Sat Jun 27 19:33:11 2020 as: nmap -v -sS -sV -Pn -oA nmap/nmap_eu 10.10.10.175
+Nmap scan report for EGOTISTICAL-BANK.LOCAL (10.10.10.175)
+Host is up (0.27s latency).
+Not shown: 988 filtered ports
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain?
+80/tcp   open  http          Microsoft IIS httpd 10.0
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2020-06-27 19:38:09Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: EGOTISTICAL-BANK.LOCAL0., Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: EGOTISTICAL-BANK.LOCAL0., Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-TCP:V=7.80%I=7%D=6/27%Time=5EF72E90%P=x86_64-unknown-linux-gnu%r
+SF:(DNSVersionBindReqTCP,20,"\0\x1e\0\x06\x81\x04\0\x01\0\0\0\0\0\0\x07ver
+SF:sion\x04bind\0\0\x10\0\x03");
+Service Info: Host: SAUNA; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jun 27 19:35:19 2020 -- 1 IP address (1 host up) scanned in 128.53 seconds

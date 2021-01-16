@@ -1,0 +1,163 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-03-01 14:26 +08
+NSE: Loaded 149 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 14:26
+NSE Timing: About 50.00% done; ETC: 14:27 (0:00:31 remaining)
+Completed NSE at 14:27, 34.07s elapsed
+Initiating NSE at 14:27
+Completed NSE at 14:27, 0.00s elapsed
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Initiating Parallel DNS resolution of 1 host. at 14:27
+Completed Parallel DNS resolution of 1 host. at 14:27, 0.01s elapsed
+Initiating SYN Stealth Scan at 14:27
+Scanning 10.10.10.154 [65535 ports]
+Discovered open port 3306/tcp on 10.10.10.154
+Discovered open port 80/tcp on 10.10.10.154
+Discovered open port 443/tcp on 10.10.10.154
+Discovered open port 445/tcp on 10.10.10.154
+SYN Stealth Scan Timing: About 5.55% done; ETC: 14:36 (0:08:48 remaining)
+SYN Stealth Scan Timing: About 16.47% done; ETC: 14:33 (0:05:09 remaining)
+SYN Stealth Scan Timing: About 29.80% done; ETC: 14:32 (0:03:34 remaining)
+SYN Stealth Scan Timing: About 40.98% done; ETC: 14:32 (0:02:54 remaining)
+SYN Stealth Scan Timing: About 53.82% done; ETC: 14:32 (0:02:10 remaining)
+SYN Stealth Scan Timing: About 69.40% done; ETC: 14:31 (0:01:20 remaining)
+SYN Stealth Scan Timing: About 77.02% done; ETC: 14:32 (0:01:05 remaining)
+SYN Stealth Scan Timing: About 87.19% done; ETC: 14:32 (0:00:36 remaining)
+Completed SYN Stealth Scan at 14:32, 285.23s elapsed (65535 total ports)
+Initiating Service scan at 14:32
+Scanning 4 services on 10.10.10.154
+Completed Service scan at 14:32, 14.58s elapsed (4 services on 1 host)
+NSE: Script scanning 10.10.10.154.
+Initiating NSE at 14:32
+Completed NSE at 14:34, 151.59s elapsed
+Initiating NSE at 14:34
+Completed NSE at 14:35, 5.63s elapsed
+Nmap scan report for 10.10.10.154
+Host is up (0.22s latency).
+Not shown: 65531 filtered ports
+PORT     STATE SERVICE      VERSION
+80/tcp   open  http         Apache httpd 2.4.39 ((Win64) OpenSSL/1.1.1b PHP/7.3.4)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.154
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://10.10.10.154:80/
+|     Form id: 
+|     Form action: login.php
+|     
+|     Path: http://10.10.10.154:80/
+|     Form id: 
+|     Form action: register.php
+|     
+|     Path: http://10.10.10.154:80/
+|     Form id: 
+|     Form action: #
+|     
+|     Path: http://10.10.10.154:80/login.php
+|     Form id: 
+|     Form action: login.php
+|     
+|     Path: http://10.10.10.154:80/login.php
+|     Form id: 
+|     Form action: register.php
+|     
+|     Path: http://10.10.10.154:80/login.php
+|     Form id: 
+|_    Form action: #
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|   /admin/: Possible admin folder
+|   /admin/index.php: Possible admin folder
+|   /Admin/: Possible admin folder
+|   /css/: Potentially interesting directory w/ listing on 'apache/2.4.39 (win64) openssl/1.1.1b php/7.3.4'
+|   /icons/: Potentially interesting folder w/ directory listing
+|   /img/: Potentially interesting directory w/ listing on 'apache/2.4.39 (win64) openssl/1.1.1b php/7.3.4'
+|   /js/: Potentially interesting directory w/ listing on 'apache/2.4.39 (win64) openssl/1.1.1b php/7.3.4'
+|_  /user/: Potentially interesting folder
+|_http-server-header: Apache/2.4.39 (Win64) OpenSSL/1.1.1b PHP/7.3.4
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-trace: TRACE is enabled
+| vulners: 
+|   cpe:/a:apache:http_server:2.4.39: 
+|     	CVE-2019-10082	6.4	https://vulners.com/cve/CVE-2019-10082
+|     	CVE-2019-10097	6.0	https://vulners.com/cve/CVE-2019-10097
+|     	CVE-2019-10098	5.8	https://vulners.com/cve/CVE-2019-10098
+|     	CVE-2019-10081	5.0	https://vulners.com/cve/CVE-2019-10081
+|_    	CVE-2019-10092	4.3	https://vulners.com/cve/CVE-2019-10092
+443/tcp  open  ssl/http     Apache httpd 2.4.39 ((Win64) OpenSSL/1.1.1b PHP/7.3.4)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.154
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: https://10.10.10.154:443/
+|     Form id: 
+|     Form action: login.php
+|     
+|     Path: https://10.10.10.154:443/
+|     Form id: 
+|     Form action: register.php
+|     
+|     Path: https://10.10.10.154:443/
+|     Form id: 
+|_    Form action: #
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|   /admin/: Possible admin folder
+|_  /admin/index.php: Possible admin folder
+|_http-server-header: Apache/2.4.39 (Win64) OpenSSL/1.1.1b PHP/7.3.4
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-trace: TRACE is enabled
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+| ssl-dh-params: 
+|   VULNERABLE:
+|   Diffie-Hellman Key Exchange Insufficient Group Strength
+|     State: VULNERABLE
+|       Transport Layer Security (TLS) services that use Diffie-Hellman groups
+|       of insufficient strength, especially those using one of a few commonly
+|       shared groups, may be susceptible to passive eavesdropping attacks.
+|     Check results:
+|       WEAK DH GROUP 1
+|             Cipher Suite: TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA
+|             Modulus Type: Safe prime
+|             Modulus Source: RFC2409/Oakley Group 2
+|             Modulus Length: 1024
+|             Generator Length: 8
+|             Public Key Length: 1024
+|     References:
+|_      https://weakdh.org
+|_sslv2-drown: 
+| vulners: 
+|   cpe:/a:apache:http_server:2.4.39: 
+|     	CVE-2019-10082	6.4	https://vulners.com/cve/CVE-2019-10082
+|     	CVE-2019-10097	6.0	https://vulners.com/cve/CVE-2019-10097
+|     	CVE-2019-10098	5.8	https://vulners.com/cve/CVE-2019-10098
+|     	CVE-2019-10081	5.0	https://vulners.com/cve/CVE-2019-10081
+|_    	CVE-2019-10092	4.3	https://vulners.com/cve/CVE-2019-10092
+445/tcp  open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+3306/tcp open  mysql        MariaDB (unauthorized)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_mysql-vuln-cve2012-2122: ERROR: Script execution failed (use -d to debug)
+Service Info: Host: BANKROBBER; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_samba-vuln-cve-2012-1182: ERROR: Script execution failed (use -d to debug)
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: No accounts left to try
+
+NSE: Script Post-scanning.
+Initiating NSE at 14:35
+Completed NSE at 14:35, 0.00s elapsed
+Initiating NSE at 14:35
+Completed NSE at 14:35, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 491.73 seconds
+           Raw packets sent: 262514 (11.551MB) | Rcvd: 207 (9.104KB)

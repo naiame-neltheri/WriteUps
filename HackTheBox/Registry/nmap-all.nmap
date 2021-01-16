@@ -1,0 +1,9 @@
+# Nmap 7.80 scan initiated Sun Mar 29 18:07:32 2020 as: nmap -v -Pn -p- -sS -sV -T5 --script=vuln -oA nmap-all 10.10.10.159
+Increasing send delay for 10.10.10.159 from 0 to 5 due to 344 out of 859 dropped probes since last increase.
+Warning: 10.10.10.159 giving up on port because retransmission cap hit (2).
+Nmap scan report for docker.registry.htb (10.10.10.159)
+Host is up (0.19s latency).
+Skipping host docker.registry.htb (10.10.10.159) due to host timeout
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 29 18:22:43 2020 -- 1 IP address (1 host up) scanned in 910.87 seconds
