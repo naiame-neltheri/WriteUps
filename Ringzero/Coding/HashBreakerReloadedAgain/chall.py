@@ -1,8 +1,7 @@
-import requests
-import random
-import hashlib
+from random import randint
+import hashlib, requests, threading
 
-SESS_ID = "vqe125prumq9nkuvl3bc1b65k4"
+SESS_ID = "erhl8371egtjg3verliemh4st3"
 
 
 def generate_hash():
@@ -12,20 +11,28 @@ def generate_hash():
 	end = raw.find("----- END HASH -----") - 10
 	return raw[start:end].strip()
 
-def breaker(_hash, tmp_answer):
-	salt = hashlib.sha1(str(random.randint(1000,9999)).encode('utf8')).hexdigest()
-	toHash = tmp_answer + salt
-	tmpHash = hashlib.sha1(toHash.encode('utf8')).hexdigest()
-	print("\r[*] TEMP Hash : {} vs {}".format(tmpHash, _hash), end="")
-	if _hash == tmpHash:
-		print("\n")
-		print("[+] Found : {}".format(tmp_answer))
-		return False
-	else:
-		return True
+def breaker(key):
+	tmp_salt = hashlib.sha256(str(randint(1000,9999)).encode('utf-8')).hexdigest().lower()
+	tmp_hash = hashlib.sha256((key + tmp_salt).encode('utf-8')).hexdigest().lower()
+	return tmp_hash
+
+def engine(_hash):
+	is_searching = True
+	while is_searching:
+		key = str(randint(1000, 9999))
+		print(f"[*] Brute forcing hash {_hash.lower()}. Trying key : {key} [THREAD-ID : {threading.current_thread().getName()}]")
+		if _hash.lower() == breaker(key):
+			print(f"[+] Found key : {key}")
+			break
 
 if "__main__" in __name__:
-	_hash = generate_hash()
-	is_running = True
-	while is_running:
-		is_running = breaker(_hash, str(random.randint(1000,9999)))
+	thread_count = 4
+	threads = []
+	try:
+		_hash = generate_hash()
+		for i in range(0, thread_count):
+			t = threading.Thread(target = engine, args = (_hash,), name = f"Thread-{i}")
+			threads.append(t)
+			t.start()
+	except Exception as error:
+		print(f"[-] Error occured : {error}")
