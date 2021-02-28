@@ -1,0 +1,27 @@
+# ACADEMY LOOTS
+
+## DOMAIN Enumeration
+- dev-staging-01.academy.htb
+- academy.htb
+
+## DATABASE Enumeration
+DEV
+-----------
+- username : homstead
+- password : secret
+PROD
+-----------
+- username : dev
+- password : mySup3rP4s5w0rd!!
+CONFIG.php
+-----------
+- username : root
+- password : GkEWXn4h34g8qx9fZ1
+- database : academy
+
+## Misc
+- Framework LARAVEL
+- APP_KEY dBLUaMuZz7Iq06XtL/Xnz/90Ejq+DEEynggqubHWFj0=
+
+## User
+- cry0l1t3:mySup3rP4s5w0rd!!

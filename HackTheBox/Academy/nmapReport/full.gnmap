@@ -1,0 +1,5 @@
+# Nmap 7.91 scan initiated Sat Feb 20 23:22:17 2021 as: nmap -v -sS -sV -Pn -sC -p- -O -oA nmapReport/full 10.10.10.215
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.215 (academy.htb)	Status: Up
+Host: 10.10.10.215 (academy.htb)	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.41 ((Ubuntu))/, 33060/open/tcp//mysqlx?///	Ignored State: closed (65532)	Seq Index: 263	IP ID Seq: All zeros
+# Nmap done at Sat Feb 20 23:37:44 2021 -- 1 IP address (1 host up) scanned in 927.25 seconds
