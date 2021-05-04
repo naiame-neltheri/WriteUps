@@ -1,0 +1,2 @@
+# Nmap 7.91 scan initiated Thu Mar 18 21:50:55 2021 as: nmap -v -sS -sV -sC -Pn -oA nmapReport/full -p- 10.10.10.222
+Increasing send delay for 10.10.10.222 from 0 to 5 due to 783 out of 2608 dropped probes since last increase.

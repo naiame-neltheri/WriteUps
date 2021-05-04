@@ -1,0 +1,5 @@
+# Nmap 7.91 scan initiated Sun Mar 28 11:40:49 2021 as: nmap -v -sS -sV -sC -Pn -O -p- -oA nmapResult/full 10.10.10.8
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.8 ()	Status: Up
+Host: 10.10.10.8 ()	Ports: 80/open/tcp//http//HttpFileServer httpd 2.3/	Ignored State: filtered (65534)	Seq Index: 265	IP ID Seq: Incremental
+# Nmap done at Sun Mar 28 11:44:02 2021 -- 1 IP address (1 host up) scanned in 193.52 seconds

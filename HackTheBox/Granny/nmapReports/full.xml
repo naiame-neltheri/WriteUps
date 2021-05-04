@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Sat Apr  3 11:18:55 2021 as: nmap -v -sS -sC -sV -Pn -p- -oA nmapReports/full 10.10.10.15 -->
+<nmaprun scanner="nmap" args="nmap -v -sS -sC -sV -Pn -p- -oA nmapReports/full 10.10.10.15" start="1617419935" startstr="Sat Apr  3 11:18:55 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1617419935"/>
+<taskend task="NSE" time="1617419935"/>
+<taskbegin task="NSE" time="1617419935"/>
+<taskend task="NSE" time="1617419935"/>
+<taskbegin task="NSE" time="1617419935"/>
+<taskend task="NSE" time="1617419935"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1617419935"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1617419936"/>
+<taskbegin task="SYN Stealth Scan" time="1617419936"/>
+<taskprogress task="SYN Stealth Scan" time="1617419967" percent="13.67" remaining="196" etc="1617420163"/>
+<taskprogress task="SYN Stealth Scan" time="1617419997" percent="40.89" remaining="89" etc="1617420085"/>
+<taskprogress task="SYN Stealth Scan" time="1617420027" percent="73.97" remaining="33" etc="1617420059"/>
+<taskend task="SYN Stealth Scan" time="1617420048" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1617420048"/>
+<taskend task="Service scan" time="1617420054" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1617420054"/>
+<taskend task="NSE" time="1617420056"/>
+<taskbegin task="NSE" time="1617420056"/>
+<taskend task="NSE" time="1617420056"/>
+<taskbegin task="NSE" time="1617420056"/>
+<taskend task="NSE" time="1617420056"/>
+<host starttime="1617419936" endtime="1617420056"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.15" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft IIS httpd" version="6.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_server:6.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD DELETE COPY MOVE PROPFIND PROPPATCH SEARCH MKCOL LOCK UNLOCK PUT POST&#xa;  Potentially risky methods: TRACE DELETE COPY MOVE PROPFIND PROPPATCH SEARCH MKCOL LOCK UNLOCK PUT"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>DELETE</elem>
+<elem>COPY</elem>
+<elem>MOVE</elem>
+<elem>PROPFIND</elem>
+<elem>PROPPATCH</elem>
+<elem>SEARCH</elem>
+<elem>MKCOL</elem>
+<elem>LOCK</elem>
+<elem>UNLOCK</elem>
+<elem>PUT</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+<elem>DELETE</elem>
+<elem>COPY</elem>
+<elem>MOVE</elem>
+<elem>PROPFIND</elem>
+<elem>PROPPATCH</elem>
+<elem>SEARCH</elem>
+<elem>MKCOL</elem>
+<elem>LOCK</elem>
+<elem>UNLOCK</elem>
+<elem>PUT</elem>
+</table>
+</script><script id="http-server-header" output="Microsoft-IIS/6.0"><elem>Microsoft-IIS/6.0</elem>
+</script><script id="http-title" output="Under Construction"><elem key="title">Under Construction</elem>
+</script><script id="http-webdav-scan" output="&#xa;  Public Options: OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK, SEARCH&#xa;  WebDAV type: Unknown&#xa;  Server Type: Microsoft-IIS/6.0&#xa;  Server Date: Sat, 03 Apr 2021 03:20:54 GMT&#xa;  Allowed Methods: OPTIONS, TRACE, GET, HEAD, DELETE, COPY, MOVE, PROPFIND, PROPPATCH, SEARCH, MKCOL, LOCK, UNLOCK"><elem key="Public Options">OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK, SEARCH</elem>
+<elem key="WebDAV type">Unknown</elem>
+<elem key="Server Type">Microsoft-IIS/6.0</elem>
+<elem key="Server Date">Sat, 03 Apr 2021 03:20:54 GMT</elem>
+<elem key="Allowed Methods">OPTIONS, TRACE, GET, HEAD, DELETE, COPY, MOVE, PROPFIND, PROPPATCH, SEARCH, MKCOL, LOCK, UNLOCK</elem>
+</script></port>
+</ports>
+<times srtt="91682" rttvar="962" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1617420056"/>
+<taskend task="NSE" time="1617420056"/>
+<taskbegin task="NSE" time="1617420056"/>
+<taskend task="NSE" time="1617420056"/>
+<taskbegin task="NSE" time="1617420056"/>
+<taskend task="NSE" time="1617420056"/>
+<runstats><finished time="1617420056" timestr="Sat Apr  3 11:20:56 2021" summary="Nmap done at Sat Apr  3 11:20:56 2021; 1 IP address (1 host up) scanned in 121.03 seconds" elapsed="121.03" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,5 @@
+# Nmap 7.91 scan initiated Sun Mar 28 12:06:41 2021 as: nmap -v -sS -sV -sC -Pn -p- -oA nmapReport/full 10.10.10.11
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.11 ()	Status: Up
+Host: 10.10.10.11 ()	Ports: 135/open/tcp//msrpc//Microsoft Windows RPC/, 8500/open/tcp//fmtp?///, 49154/open/tcp//msrpc//Microsoft Windows RPC/	Ignored State: filtered (65532)
+# Nmap done at Sun Mar 28 12:12:25 2021 -- 1 IP address (1 host up) scanned in 343.80 seconds

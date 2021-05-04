@@ -1,0 +1,29 @@
+# Nmap 7.91 scan initiated Sun Mar 21 21:00:08 2021 as: nmap -sS -sV -sC -Pn -oA nmapReport/default -O -v 10.10.10.5
+Nmap scan report for 10.10.10.5
+Host is up (0.20s latency).
+Not shown: 998 filtered ports
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     Microsoft ftpd
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| 03-18-17  01:06AM       <DIR>          aspnet_client
+| 03-17-17  04:37PM                  689 iisstart.htm
+|_03-17-17  04:37PM               184946 welcome.png
+| ftp-syst: 
+|_  SYST: Windows_NT
+80/tcp open  http    Microsoft IIS httpd 7.5
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/7.5
+|_http-title: IIS7
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Microsoft Windows Server 2008 R2 (91%), Microsoft Windows Server 2008 R2 SP1 or Windows 8 (91%), Microsoft Windows 7 SP1 or Windows Server 2008 SP2 or 2008 R2 SP1 (91%), Microsoft Windows Vista SP0 or SP1, Windows Server 2008 SP1, or Windows 7 (91%), Microsoft Windows Vista SP2, Windows 7 SP1, or Windows Server 2008 (90%), Microsoft Windows 8.1 Update 1 (90%), Microsoft Windows Phone 7.5 or 8.0 (90%), Microsoft Windows 7 or Windows Server 2008 R2 (90%), Microsoft Windows Server 2008 R2 or Windows 8.1 (90%), Microsoft Windows 7 (90%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.059 days (since Sun Mar 21 19:35:15 2021)
+TCP Sequence Prediction: Difficulty=250 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 21 21:00:40 2021 -- 1 IP address (1 host up) scanned in 32.28 seconds

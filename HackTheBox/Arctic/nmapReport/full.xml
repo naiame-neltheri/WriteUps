@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Sun Mar 28 12:06:41 2021 as: nmap -v -sS -sV -sC -Pn -p- -oA nmapReport/full 10.10.10.11 -->
+<nmaprun scanner="nmap" args="nmap -v -sS -sV -sC -Pn -p- -oA nmapReport/full 10.10.10.11" start="1616904401" startstr="Sun Mar 28 12:06:41 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1616904401"/>
+<taskend task="NSE" time="1616904401"/>
+<taskbegin task="NSE" time="1616904401"/>
+<taskend task="NSE" time="1616904401"/>
+<taskbegin task="NSE" time="1616904401"/>
+<taskend task="NSE" time="1616904401"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1616904401"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1616904402"/>
+<taskbegin task="SYN Stealth Scan" time="1616904402"/>
+<taskprogress task="SYN Stealth Scan" time="1616904433" percent="11.07" remaining="249" etc="1616904682"/>
+<taskprogress task="SYN Stealth Scan" time="1616904463" percent="24.10" remaining="193" etc="1616904655"/>
+<taskprogress task="SYN Stealth Scan" time="1616904493" percent="41.91" remaining="127" etc="1616904619"/>
+<taskprogress task="SYN Stealth Scan" time="1616904523" percent="54.37" remaining="102" etc="1616904625"/>
+<taskprogress task="SYN Stealth Scan" time="1616904553" percent="66.47" remaining="77" etc="1616904629"/>
+<taskprogress task="SYN Stealth Scan" time="1616904583" percent="82.42" remaining="39" etc="1616904622"/>
+<taskend task="SYN Stealth Scan" time="1616904608" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1616904608"/>
+<taskend task="Service scan" time="1616904740" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1616904740"/>
+<taskend task="NSE" time="1616904744"/>
+<taskbegin task="NSE" time="1616904744"/>
+<taskend task="NSE" time="1616904745"/>
+<taskbegin task="NSE" time="1616904745"/>
+<taskend task="NSE" time="1616904745"/>
+<host starttime="1616904402" endtime="1616904745"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.11" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="8500"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="fmtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49154"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<times srtt="98746" rttvar="3267" to="111814"/>
+</host>
+<taskbegin task="NSE" time="1616904745"/>
+<taskend task="NSE" time="1616904745"/>
+<taskbegin task="NSE" time="1616904745"/>
+<taskend task="NSE" time="1616904745"/>
+<taskbegin task="NSE" time="1616904745"/>
+<taskend task="NSE" time="1616904745"/>
+<runstats><finished time="1616904745" timestr="Sun Mar 28 12:12:25 2021" summary="Nmap done at Sun Mar 28 12:12:25 2021; 1 IP address (1 host up) scanned in 343.80 seconds" elapsed="343.80" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
